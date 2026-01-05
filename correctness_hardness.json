@@ -1,0 +1,802 @@
+{
+    "12201": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 2,
+            "execution": 2
+        },
+        "human_annotation": "1"
+    },
+    "3538": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 3,
+            "execution": 3
+        },
+        "human_annotation": "1"
+    },
+    "4801": {
+        "complexity": {
+            "cognitive": 2,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "11476": {
+        "complexity": {
+            "cognitive": 3,
+            "spatial": 2,
+            "execution": 1
+        },
+        "human_annotation": "1"
+    },
+    "5285": {
+        "complexity": {
+            "cognitive": 2,
+            "spatial": 3,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "4077": {
+        "complexity": {
+            "cognitive": 3,
+            "spatial": 6,
+            "execution": 7
+        },
+        "human_annotation": "1"
+    },
+    "1624": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 6,
+            "execution": 8
+        },
+        "human_annotation": "0"
+    },
+    "4130": {
+        "complexity": {
+            "cognitive": 7,
+            "spatial": 3,
+            "execution": 5
+        },
+        "human_annotation": "0"
+    },
+    "2350": {
+        "complexity": {
+            "cognitive": 2,
+            "spatial": 3,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "4117": {
+        "complexity": {
+            "cognitive": 3,
+            "spatial": 4,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "2897": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 6,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "6479": {
+        "complexity": {
+            "cognitive": 6,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "12741": {
+        "complexity": {
+            "cognitive": 6,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "3432": {
+        "complexity": {
+            "cognitive": 2,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "11574": {
+        "complexity": {
+            "cognitive": 3,
+            "spatial": 4,
+            "execution": 7
+        },
+        "human_annotation": "1"
+    },
+    "5647": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "0"
+    },
+    "7331": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "0"
+    },
+    "3074": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 8,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "4755": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 4,
+            "execution": 7
+        },
+        "human_annotation": "1"
+    },
+    "11197": {
+        "complexity": {
+            "cognitive": 7,
+            "spatial": 5,
+            "execution": 5
+        },
+        "human_annotation": "0"
+    },
+    "5953": {
+        "complexity": {
+            "cognitive": 7,
+            "spatial": 5,
+            "execution": 6
+        },
+        "human_annotation": "0"
+    },
+    "1512": {
+        "complexity": {
+            "cognitive": 1,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "3171": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 3,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "2653": {
+        "complexity": {
+            "cognitive": 2,
+            "spatial": 4,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "11247": {
+        "complexity": {
+            "cognitive": 6,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "11844": {
+        "complexity": {
+            "cognitive": 3,
+            "spatial": 4,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "4301": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "10556": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 3,
+            "execution": 6
+        },
+        "human_annotation": "0"
+    },
+    "2627": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "0"
+    },
+    "2784": {
+        "complexity": {
+            "cognitive": 2,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "6625": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "3769": {
+        "complexity": {
+            "cognitive": 2,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "6876": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "6448": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 4,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "11609": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 4,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "6165": {
+        "complexity": {
+            "cognitive": 2,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "12839": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "11790": {
+        "complexity": {
+            "cognitive": 8,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "6455": {
+        "complexity": {
+            "cognitive": 3,
+            "spatial": 4,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "1993": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 4,
+            "execution": 5
+        },
+        "human_annotation": "0"
+    },
+    "2478": {
+        "complexity": {
+            "cognitive": 2,
+            "spatial": 3,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "5002": {
+        "complexity": {
+            "cognitive": 3,
+            "spatial": 3,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "4742": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 5,
+            "execution": 5
+        },
+        "human_annotation": "0"
+    },
+    "10065": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 2,
+            "execution": 3
+        },
+        "human_annotation": "1"
+    },
+    "11263": {
+        "complexity": {
+            "cognitive": 2,
+            "spatial": 2,
+            "execution": 3
+        },
+        "human_annotation": "1"
+    },
+    "10697": {
+        "complexity": {
+            "cognitive": 6,
+            "spatial": 3,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "3764": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "4830": {
+        "complexity": {
+            "cognitive": 3,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "4224": {
+        "complexity": {
+            "cognitive": 3,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "6415": {
+        "complexity": {
+            "cognitive": 2,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "2329": {
+        "complexity": {
+            "cognitive": 3,
+            "spatial": 3,
+            "execution": 2
+        },
+        "human_annotation": "1"
+    },
+    "11868": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "6220": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "12181": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "5439": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "10773": {
+        "complexity": {
+            "cognitive": 8,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "4606": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "6199": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 7,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "5261": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "4240": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "0"
+    },
+    "11453": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 5,
+            "execution": 6
+        },
+        "human_annotation": "1"
+    },
+    "2248": {
+        "complexity": {
+            "cognitive": 2,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "3201": {
+        "complexity": {
+            "cognitive": 3,
+            "spatial": 4,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "9974": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 5,
+            "execution": 6
+        },
+        "human_annotation": "1"
+    },
+    "3961": {
+        "complexity": {
+            "cognitive": 1,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "7364": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "10347": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 5,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "11793": {
+        "complexity": {
+            "cognitive": 7,
+            "spatial": 4,
+            "execution": 6
+        },
+        "human_annotation": "1"
+    },
+    "7182": {
+        "complexity": {
+            "cognitive": 6,
+            "spatial": 6,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "2304": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 5,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "5698": {
+        "complexity": {
+            "cognitive": 2,
+            "spatial": 2,
+            "execution": 2
+        },
+        "human_annotation": "1"
+    },
+    "4816": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 5,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "4291": {
+        "complexity": {
+            "cognitive": 3,
+            "spatial": 3,
+            "execution": 4
+        },
+        "human_annotation": "0"
+    },
+    "11046": {
+        "complexity": {
+            "cognitive": 3,
+            "spatial": 4,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "12751": {
+        "complexity": {
+            "cognitive": 7,
+            "spatial": 7,
+            "execution": 7
+        },
+        "human_annotation": "0"
+    },
+    "10426": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "10789": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 4,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "11070": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 3,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "5086": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "1994": {
+        "complexity": {
+            "cognitive": 2,
+            "spatial": 4,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "4688": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 4,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "3450": {
+        "complexity": {
+            "cognitive": 3,
+            "spatial": 4,
+            "execution": 6
+        },
+        "human_annotation": "1"
+    },
+    "5564": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 4,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "4517": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 4,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "2553": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 3,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "10660": {
+        "complexity": {
+            "cognitive": 6,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "4049": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 4,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "12783": {
+        "complexity": {
+            "cognitive": 3,
+            "spatial": 4,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "7018": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 5,
+            "execution": 6
+        },
+        "human_annotation": "1"
+    },
+    "4788": {
+        "complexity": {
+            "cognitive": 3,
+            "spatial": 2,
+            "execution": 6
+        },
+        "human_annotation": "1"
+    },
+    "2223": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 2,
+            "execution": 6
+        },
+        "human_annotation": "1"
+    },
+    "11604": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 2,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "3070": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 3,
+            "execution": 4
+        },
+        "human_annotation": "0"
+    },
+    "11074": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 3,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "12866": {
+        "complexity": {
+            "cognitive": 6,
+            "spatial": 6,
+            "execution": 7
+        },
+        "human_annotation": "1"
+    },
+    "10474": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 4,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "2715": {
+        "complexity": {
+            "cognitive": 5,
+            "spatial": 3,
+            "execution": 4
+        },
+        "human_annotation": "1"
+    },
+    "3782": {
+        "complexity": {
+            "cognitive": 3,
+            "spatial": 2,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    },
+    "12176": {
+        "complexity": {
+            "cognitive": 4,
+            "spatial": 6,
+            "execution": 6
+        },
+        "human_annotation": "1"
+    },
+    "3578": {
+        "complexity": {
+            "cognitive": 2,
+            "spatial": 4,
+            "execution": 5
+        },
+        "human_annotation": "1"
+    }
+}

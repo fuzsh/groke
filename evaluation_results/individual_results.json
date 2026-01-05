@@ -1,0 +1,5202 @@
+[
+  {
+    "key": "12201",
+    "num_sub_goals": 5,
+    "osm_path_length": 33,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 33,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 33,
+          "osm_length": 33,
+          "common_nodes": 33
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "66f7cd63c8f94cef9e20f303aea3e909",
+          "osm_end": "66f7cd63c8f94cef9e20f303aea3e909"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "3538",
+    "num_sub_goals": 5,
+    "osm_path_length": 42,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 42,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 42,
+          "osm_length": 42,
+          "common_nodes": 42
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "42435680",
+          "osm_end": "42435680"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "4801",
+    "num_sub_goals": 6,
+    "osm_path_length": 41,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 42,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9761904761904762,
+          "recall": 1.0,
+          "f1": 0.9879518072289156,
+          "sequence_overlap": 1.0,
+          "predicted_length": 42,
+          "osm_length": 41,
+          "common_nodes": 41
+        },
+        "endpoint_distance": {
+          "distance_meters": 9.755114563023753,
+          "is_correct": true,
+          "predicted_end": "f3f6c35b343241cba4bcd8ca3c7f71fd",
+          "osm_end": "3415849153e946e88f1db29d0e377fe0"
+        },
+        "nav_metrics": {
+          "navigation_error": 9.755114563023753,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9764347966376868,
+          "ndtw": 0.9764347966376868
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "11476",
+    "num_sub_goals": 4,
+    "osm_path_length": 39,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 5,
+        "expanded_path_length": 32,
+        "path_overlap": {
+          "overlap_ratio": 0.8205128205128205,
+          "precision": 1.0,
+          "recall": 0.8205128205128205,
+          "f1": 0.9014084507042254,
+          "sequence_overlap": 0.8205128205128205,
+          "predicted_length": 32,
+          "osm_length": 39,
+          "common_nodes": 32
+        },
+        "endpoint_distance": {
+          "distance_meters": 72.75532686398977,
+          "is_correct": false,
+          "predicted_end": "f64bf93758d54191a93944d612c4272b",
+          "osm_end": "0783dab746e84931ba736f8d3e8cca68"
+        },
+        "nav_metrics": {
+          "navigation_error": 72.75532686398977,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 72.75532686398977,
+          "sdtw": 0.0,
+          "ndtw": 0.4681335675751977
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "5285",
+    "num_sub_goals": 5,
+    "osm_path_length": 35,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 36,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9722222222222222,
+          "recall": 1.0,
+          "f1": 0.9859154929577464,
+          "sequence_overlap": 1.0,
+          "predicted_length": 36,
+          "osm_length": 35,
+          "common_nodes": 35
+        },
+        "endpoint_distance": {
+          "distance_meters": 9.927640914996607,
+          "is_correct": true,
+          "predicted_end": "c2543a1cd15a45feb8b2a3319e34cc85",
+          "osm_end": "c48b0142b981426a9212ef50274c4c99"
+        },
+        "nav_metrics": {
+          "navigation_error": 9.927640914996607,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.972044377707155,
+          "ndtw": 0.972044377707155
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "4077",
+    "num_sub_goals": 6,
+    "osm_path_length": 40,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 9,
+        "expanded_path_length": 47,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.851063829787234,
+          "recall": 1.0,
+          "f1": 0.9195402298850576,
+          "sequence_overlap": 1.0,
+          "predicted_length": 47,
+          "osm_length": 40,
+          "common_nodes": 40
+        },
+        "endpoint_distance": {
+          "distance_meters": 68.97129523287907,
+          "is_correct": false,
+          "predicted_end": "0e9370da4054426e9895539b02564f0b",
+          "osm_end": "466ae8a469e64da3887b64927e80a549"
+        },
+        "nav_metrics": {
+          "navigation_error": 68.97129523287907,
+          "success": false,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.0,
+          "ndtw": 0.4895011030210127
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "1624",
+    "num_sub_goals": 6,
+    "osm_path_length": 40,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 8,
+        "expanded_path_length": 37,
+        "path_overlap": {
+          "overlap_ratio": 0.275,
+          "precision": 0.2972972972972973,
+          "recall": 0.275,
+          "f1": 0.28571428571428575,
+          "sequence_overlap": 0.275,
+          "predicted_length": 37,
+          "osm_length": 40,
+          "common_nodes": 11
+        },
+        "endpoint_distance": {
+          "distance_meters": 429.2200158995403,
+          "is_correct": false,
+          "predicted_end": "bd65884cfb264fc3a990719c67c787ba",
+          "osm_end": "a756bb84e6a041aa93274227bfb91fb3"
+        },
+        "nav_metrics": {
+          "navigation_error": 429.2200158995403,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 269.51709666638476,
+          "sdtw": 0.0,
+          "ndtw": 1.1077063755954145e-06
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "4130",
+    "num_sub_goals": 4,
+    "osm_path_length": 40,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 55,
+        "path_overlap": {
+          "overlap_ratio": 0.8,
+          "precision": 0.5818181818181818,
+          "recall": 0.8,
+          "f1": 0.6736842105263158,
+          "sequence_overlap": 0.8,
+          "predicted_length": 55,
+          "osm_length": 40,
+          "common_nodes": 32
+        },
+        "endpoint_distance": {
+          "distance_meters": 112.45466337710383,
+          "is_correct": false,
+          "predicted_end": "42428310",
+          "osm_end": "42440001"
+        },
+        "nav_metrics": {
+          "navigation_error": 112.45466337710383,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 76.64616547239093,
+          "sdtw": 0.0,
+          "ndtw": 0.015761171943851023
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "2350",
+    "num_sub_goals": 4,
+    "osm_path_length": 43,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 5,
+        "expanded_path_length": 44,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9772727272727273,
+          "recall": 1.0,
+          "f1": 0.9885057471264368,
+          "sequence_overlap": 1.0,
+          "predicted_length": 44,
+          "osm_length": 43,
+          "common_nodes": 43
+        },
+        "endpoint_distance": {
+          "distance_meters": 10.1304987398586,
+          "is_correct": true,
+          "predicted_end": "5b2dc6843090462d8cb632d89dc12978",
+          "osm_end": "24be7d215fc34129b64946e85567c04c"
+        },
+        "nav_metrics": {
+          "navigation_error": 10.1304987398586,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9760452279317654,
+          "ndtw": 0.9760452279317654
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "4117",
+    "num_sub_goals": 5,
+    "osm_path_length": 38,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 38,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 38,
+          "osm_length": 38,
+          "common_nodes": 38
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "aca0075beeed45c0b61f7d212f32552b",
+          "osm_end": "aca0075beeed45c0b61f7d212f32552b"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "2897",
+    "num_sub_goals": 6,
+    "osm_path_length": 34,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 8,
+        "expanded_path_length": 34,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 34,
+          "osm_length": 34,
+          "common_nodes": 34
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "42433205",
+          "osm_end": "42433205"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "6479",
+    "num_sub_goals": 3,
+    "osm_path_length": 35,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 5,
+        "expanded_path_length": 35,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 35,
+          "osm_length": 35,
+          "common_nodes": 35
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "42434358",
+          "osm_end": "42434358"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "12741",
+    "num_sub_goals": 5,
+    "osm_path_length": 38,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 47,
+        "path_overlap": {
+          "overlap_ratio": 0.13157894736842105,
+          "precision": 0.10638297872340426,
+          "recall": 0.13157894736842105,
+          "f1": 0.1176470588235294,
+          "sequence_overlap": 0.13157894736842105,
+          "predicted_length": 47,
+          "osm_length": 38,
+          "common_nodes": 5
+        },
+        "endpoint_distance": {
+          "distance_meters": 87.06612736169438,
+          "is_correct": false,
+          "predicted_end": "6d60872dcd284c24943585a38794324f",
+          "osm_end": "cbebff96337548289329225269557af5"
+        },
+        "nav_metrics": {
+          "navigation_error": 87.06612736169438,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 67.55929300452819,
+          "sdtw": 0.0,
+          "ndtw": 0.00025791910632435276
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "3432",
+    "num_sub_goals": 4,
+    "osm_path_length": 41,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 41,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 41,
+          "osm_length": 41,
+          "common_nodes": 41
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "fd462e7033c9417e8b497baa46a5ab43",
+          "osm_end": "fd462e7033c9417e8b497baa46a5ab43"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "11574",
+    "num_sub_goals": 4,
+    "osm_path_length": 33,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 33,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 33,
+          "osm_length": 33,
+          "common_nodes": 33
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "640bcb620b8647a0a97c5fa02c3c43c3",
+          "osm_end": "640bcb620b8647a0a97c5fa02c3c43c3"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "5647",
+    "num_sub_goals": 6,
+    "osm_path_length": 35,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 28,
+        "path_overlap": {
+          "overlap_ratio": 0.22857142857142856,
+          "precision": 0.2857142857142857,
+          "recall": 0.22857142857142856,
+          "f1": 0.25396825396825395,
+          "sequence_overlap": 0.22857142857142856,
+          "predicted_length": 28,
+          "osm_length": 35,
+          "common_nodes": 8
+        },
+        "endpoint_distance": {
+          "distance_meters": 300.6606906043557,
+          "is_correct": false,
+          "predicted_end": "1e7d609892dc4a39b96c805d21b8afb0",
+          "osm_end": "877d95b12bac411aa2b2c7392c44b880"
+        },
+        "nav_metrics": {
+          "navigation_error": 300.6606906043557,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 242.85304297893185,
+          "sdtw": 0.0,
+          "ndtw": 3.0958772062885617e-06
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "7331",
+    "num_sub_goals": 5,
+    "osm_path_length": 42,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 9,
+        "expanded_path_length": 62,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.6774193548387096,
+          "recall": 1.0,
+          "f1": 0.8076923076923077,
+          "sequence_overlap": 1.0,
+          "predicted_length": 62,
+          "osm_length": 42,
+          "common_nodes": 42
+        },
+        "endpoint_distance": {
+          "distance_meters": 210.02692630062978,
+          "is_correct": false,
+          "predicted_end": "42429661",
+          "osm_end": "447992d2af1c4a6597a1f9d9ca65c4dd"
+        },
+        "nav_metrics": {
+          "navigation_error": 210.02692630062978,
+          "success": false,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.0,
+          "ndtw": 0.004711168858092918
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "3074",
+    "num_sub_goals": 8,
+    "osm_path_length": 37,
+    "methods": {
+      "json": {
+        "status": "PROGRESS",
+        "is_completely_wrong": false,
+        "num_waypoints": 10,
+        "expanded_path_length": 51,
+        "path_overlap": {
+          "overlap_ratio": 0.8378378378378378,
+          "precision": 0.6078431372549019,
+          "recall": 0.8378378378378378,
+          "f1": 0.7045454545454545,
+          "sequence_overlap": 0.8378378378378378,
+          "predicted_length": 51,
+          "osm_length": 37,
+          "common_nodes": 31
+        },
+        "endpoint_distance": {
+          "distance_meters": 211.44236956937397,
+          "is_correct": false,
+          "predicted_end": "d3da37e4ac56480fb2902238b43f4bad",
+          "osm_end": "42438471"
+        },
+        "nav_metrics": {
+          "navigation_error": 211.44236956937397,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 59.674703607056564,
+          "sdtw": 0.0,
+          "ndtw": 0.002392033175747977
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "4755",
+    "num_sub_goals": 7,
+    "osm_path_length": 31,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 47,
+        "path_overlap": {
+          "overlap_ratio": 0.8709677419354839,
+          "precision": 0.574468085106383,
+          "recall": 0.8709677419354839,
+          "f1": 0.6923076923076925,
+          "sequence_overlap": 0.8709677419354839,
+          "predicted_length": 47,
+          "osm_length": 31,
+          "common_nodes": 27
+        },
+        "endpoint_distance": {
+          "distance_meters": 202.39737354593163,
+          "is_correct": false,
+          "predicted_end": "693084dcd9b249a4bd4b9fce6976487b",
+          "osm_end": "076d1368e23b49e2897aa912fb871faa"
+        },
+        "nav_metrics": {
+          "navigation_error": 202.39737354593163,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 40.65744723743603,
+          "sdtw": 0.0,
+          "ndtw": 0.0010085168517582146
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "11197",
+    "num_sub_goals": 7,
+    "osm_path_length": 42,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 9,
+        "expanded_path_length": 43,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9767441860465116,
+          "recall": 1.0,
+          "f1": 0.988235294117647,
+          "sequence_overlap": 1.0,
+          "predicted_length": 43,
+          "osm_length": 42,
+          "common_nodes": 42
+        },
+        "endpoint_distance": {
+          "distance_meters": 10.087372365813119,
+          "is_correct": true,
+          "predicted_end": "5c7f9380fcc94da9ad64885f4712b7d0",
+          "osm_end": "d4ccb258c0e34f7f8ad7b5e0fb19646c"
+        },
+        "nav_metrics": {
+          "navigation_error": 10.087372365813119,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9757408847278641,
+          "ndtw": 0.9757408847278641
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "5953",
+    "num_sub_goals": 7,
+    "osm_path_length": 41,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 8,
+        "expanded_path_length": 41,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 41,
+          "osm_length": 41,
+          "common_nodes": 41
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "79a2a7ec8b844325bb610796d60c13aa",
+          "osm_end": "79a2a7ec8b844325bb610796d60c13aa"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "1512",
+    "num_sub_goals": 4,
+    "osm_path_length": 38,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 38,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 38,
+          "osm_length": 38,
+          "common_nodes": 38
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "822aafd95ccf46f391d0d670a2ef567a",
+          "osm_end": "822aafd95ccf46f391d0d670a2ef567a"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "3171",
+    "num_sub_goals": 5,
+    "osm_path_length": 36,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 36,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 36,
+          "osm_length": 36,
+          "common_nodes": 36
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "42437753",
+          "osm_end": "42437753"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "2653",
+    "num_sub_goals": 5,
+    "osm_path_length": 39,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 40,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.975,
+          "recall": 1.0,
+          "f1": 0.9873417721518987,
+          "sequence_overlap": 1.0,
+          "predicted_length": 40,
+          "osm_length": 39,
+          "common_nodes": 39
+        },
+        "endpoint_distance": {
+          "distance_meters": 10.120449011271738,
+          "is_correct": true,
+          "predicted_end": "0955b761c30440cf98380db039b58e13",
+          "osm_end": "431393ea5b0248a1869ea1f67b35ba63"
+        },
+        "nav_metrics": {
+          "navigation_error": 10.120449011271738,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9741476166010956,
+          "ndtw": 0.9741476166010956
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "11247",
+    "num_sub_goals": 6,
+    "osm_path_length": 38,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 40,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.95,
+          "recall": 1.0,
+          "f1": 0.9743589743589743,
+          "sequence_overlap": 1.0,
+          "predicted_length": 40,
+          "osm_length": 38,
+          "common_nodes": 38
+        },
+        "endpoint_distance": {
+          "distance_meters": 20.085621069720922,
+          "is_correct": true,
+          "predicted_end": "79d46e943c6a4ee3b03eed7fb6adf5a2",
+          "osm_end": "d7fbc4f184d04e16b4e1fd84f1f8a823"
+        },
+        "nav_metrics": {
+          "navigation_error": 20.085621069720922,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9243216459644815,
+          "ndtw": 0.9243216459644815
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "11844",
+    "num_sub_goals": 3,
+    "osm_path_length": 38,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 8,
+        "expanded_path_length": 48,
+        "path_overlap": {
+          "overlap_ratio": 0.7368421052631579,
+          "precision": 0.5833333333333334,
+          "recall": 0.7368421052631579,
+          "f1": 0.6511627906976745,
+          "sequence_overlap": 0.7368421052631579,
+          "predicted_length": 48,
+          "osm_length": 38,
+          "common_nodes": 28
+        },
+        "endpoint_distance": {
+          "distance_meters": 219.92976744974112,
+          "is_correct": false,
+          "predicted_end": "3db9290155b04cc2ad6acee9bde46611",
+          "osm_end": "27fb2fb9cb704d51a9fc6566e684fe8f"
+        },
+        "nav_metrics": {
+          "navigation_error": 219.92976744974112,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 102.80262442058635,
+          "sdtw": 0.0,
+          "ndtw": 0.0029313527555961012
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "4301",
+    "num_sub_goals": 5,
+    "osm_path_length": 31,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 32,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.96875,
+          "recall": 1.0,
+          "f1": 0.9841269841269841,
+          "sequence_overlap": 1.0,
+          "predicted_length": 32,
+          "osm_length": 31,
+          "common_nodes": 31
+        },
+        "endpoint_distance": {
+          "distance_meters": 10.32186446358397,
+          "is_correct": true,
+          "predicted_end": "8eb3bbb2e9d54676ad6bbc4748a9e72d",
+          "osm_end": "59e0bc2fb73c46c3a60aeb4c8d18e5e5"
+        },
+        "nav_metrics": {
+          "navigation_error": 10.32186446358397,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9665110311836785,
+          "ndtw": 0.9665110311836785
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "10556",
+    "num_sub_goals": 7,
+    "osm_path_length": 31,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 8,
+        "expanded_path_length": 33,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9393939393939394,
+          "recall": 1.0,
+          "f1": 0.96875,
+          "sequence_overlap": 1.0,
+          "predicted_length": 33,
+          "osm_length": 31,
+          "common_nodes": 31
+        },
+        "endpoint_distance": {
+          "distance_meters": 19.706208934493535,
+          "is_correct": true,
+          "predicted_end": "b3066fe2c9d44a65865fdcdd24eead9a",
+          "osm_end": "a7d872b02829461fa2bc689f783dd0ae"
+        },
+        "nav_metrics": {
+          "navigation_error": 19.706208934493535,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.906705063514686,
+          "ndtw": 0.906705063514686
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "2627",
+    "num_sub_goals": 3,
+    "osm_path_length": 36,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 5,
+        "expanded_path_length": 39,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9230769230769231,
+          "recall": 1.0,
+          "f1": 0.9600000000000001,
+          "sequence_overlap": 1.0,
+          "predicted_length": 39,
+          "osm_length": 36,
+          "common_nodes": 36
+        },
+        "endpoint_distance": {
+          "distance_meters": 31.00361766148856,
+          "is_correct": false,
+          "predicted_end": "42430308",
+          "osm_end": "1dbfea81bb0e4dd89cf01e33aca6230a"
+        },
+        "nav_metrics": {
+          "navigation_error": 31.00361766148856,
+          "success": false,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.0,
+          "ndtw": 0.8353801937754004
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "2784",
+    "num_sub_goals": 3,
+    "osm_path_length": 34,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 34,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 34,
+          "osm_length": 34,
+          "common_nodes": 34
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "bd1c4c30a2b64fa68669c445886a9fa1",
+          "osm_end": "bd1c4c30a2b64fa68669c445886a9fa1"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "6625",
+    "num_sub_goals": 4,
+    "osm_path_length": 41,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 42,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9761904761904762,
+          "recall": 1.0,
+          "f1": 0.9879518072289156,
+          "sequence_overlap": 1.0,
+          "predicted_length": 42,
+          "osm_length": 41,
+          "common_nodes": 41
+        },
+        "endpoint_distance": {
+          "distance_meters": 9.760056802537433,
+          "is_correct": true,
+          "predicted_end": "2a3652875f414eecaf40e07420928917",
+          "osm_end": "476c8b33f7bf4dbb8be49d27b6425280"
+        },
+        "nav_metrics": {
+          "navigation_error": 9.760056802537433,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9759855435748721,
+          "ndtw": 0.9759855435748721
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "3769",
+    "num_sub_goals": 3,
+    "osm_path_length": 40,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 4,
+        "expanded_path_length": 40,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 40,
+          "osm_length": 40,
+          "common_nodes": 40
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "42427483",
+          "osm_end": "42427483"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "6876",
+    "num_sub_goals": 4,
+    "osm_path_length": 41,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 5,
+        "expanded_path_length": 41,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 41,
+          "osm_length": 41,
+          "common_nodes": 41
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "1a88901f6c774c1d820fe5fa7c25dac9",
+          "osm_end": "1a88901f6c774c1d820fe5fa7c25dac9"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "6448",
+    "num_sub_goals": 5,
+    "osm_path_length": 38,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 38,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 38,
+          "osm_length": 38,
+          "common_nodes": 38
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "f62e046c30f947ac8db6a53ada762f1f",
+          "osm_end": "f62e046c30f947ac8db6a53ada762f1f"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "11609",
+    "num_sub_goals": 5,
+    "osm_path_length": 31,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 31,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 31,
+          "osm_length": 31,
+          "common_nodes": 31
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "a53b832c448543e189e187b5c237a84b",
+          "osm_end": "a53b832c448543e189e187b5c237a84b"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "6165",
+    "num_sub_goals": 6,
+    "osm_path_length": 41,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 43,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9534883720930233,
+          "recall": 1.0,
+          "f1": 0.9761904761904763,
+          "sequence_overlap": 1.0,
+          "predicted_length": 43,
+          "osm_length": 41,
+          "common_nodes": 41
+        },
+        "endpoint_distance": {
+          "distance_meters": 19.573860898920522,
+          "is_correct": true,
+          "predicted_end": "42442898",
+          "osm_end": "7b4719af39e34173aa886f97b1b64be4"
+        },
+        "nav_metrics": {
+          "navigation_error": 19.573860898920522,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9294805776553949,
+          "ndtw": 0.9294805776553949
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "12839",
+    "num_sub_goals": 7,
+    "osm_path_length": 38,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 8,
+        "expanded_path_length": 40,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.95,
+          "recall": 1.0,
+          "f1": 0.9743589743589743,
+          "sequence_overlap": 1.0,
+          "predicted_length": 40,
+          "osm_length": 38,
+          "common_nodes": 38
+        },
+        "endpoint_distance": {
+          "distance_meters": 19.525513474118917,
+          "is_correct": true,
+          "predicted_end": "c16e89296cb9479c9a4a6759fa0f33b4",
+          "osm_end": "17ed7eac2d0f4c6192889a25c2637e1a"
+        },
+        "nav_metrics": {
+          "navigation_error": 19.525513474118917,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9224386309358341,
+          "ndtw": 0.9224386309358341
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "11790",
+    "num_sub_goals": 7,
+    "osm_path_length": 43,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 8,
+        "expanded_path_length": 43,
+        "path_overlap": {
+          "overlap_ratio": 0.4883720930232558,
+          "precision": 0.4883720930232558,
+          "recall": 0.4883720930232558,
+          "f1": 0.4883720930232558,
+          "sequence_overlap": 0.4883720930232558,
+          "predicted_length": 43,
+          "osm_length": 43,
+          "common_nodes": 21
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "f7f4c7a2dda34b02954885ad0f97e55d",
+          "osm_end": "f7f4c7a2dda34b02954885ad0f97e55d"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.01914703525725243,
+          "ndtw": 0.01914703525725243
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "6455",
+    "num_sub_goals": 3,
+    "osm_path_length": 34,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 4,
+        "expanded_path_length": 32,
+        "path_overlap": {
+          "overlap_ratio": 0.7058823529411765,
+          "precision": 0.75,
+          "recall": 0.7058823529411765,
+          "f1": 0.7272727272727272,
+          "sequence_overlap": 0.7058823529411765,
+          "predicted_length": 32,
+          "osm_length": 34,
+          "common_nodes": 24
+        },
+        "endpoint_distance": {
+          "distance_meters": 16.948919884392858,
+          "is_correct": true,
+          "predicted_end": "c5e4401cf7f24f92ac364864cb2d77ac",
+          "osm_end": "42428192"
+        },
+        "nav_metrics": {
+          "navigation_error": 16.948919884392858,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 16.948919884392858,
+          "sdtw": 0.5881067777538447,
+          "ndtw": 0.5881067777538447
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "1993",
+    "num_sub_goals": 3,
+    "osm_path_length": 44,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 5,
+        "expanded_path_length": 45,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9777777777777777,
+          "recall": 1.0,
+          "f1": 0.9887640449438202,
+          "sequence_overlap": 1.0,
+          "predicted_length": 45,
+          "osm_length": 44,
+          "common_nodes": 44
+        },
+        "endpoint_distance": {
+          "distance_meters": 10.717360351447734,
+          "is_correct": true,
+          "predicted_end": "64dc014a4f984f54b58691a13cdb61a8",
+          "osm_end": "0e6b2635116d473cbd78d7f1cff82dce"
+        },
+        "nav_metrics": {
+          "navigation_error": 10.717360351447734,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9755491974733409,
+          "ndtw": 0.9755491974733409
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "2478",
+    "num_sub_goals": 5,
+    "osm_path_length": 42,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 43,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9767441860465116,
+          "recall": 1.0,
+          "f1": 0.988235294117647,
+          "sequence_overlap": 1.0,
+          "predicted_length": 43,
+          "osm_length": 42,
+          "common_nodes": 42
+        },
+        "endpoint_distance": {
+          "distance_meters": 10.557164083173891,
+          "is_correct": true,
+          "predicted_end": "90620d6c1e884c069fbf314611f5a879",
+          "osm_end": "7fbc7c44f91e4ed7990e8d3c3dc35d46"
+        },
+        "nav_metrics": {
+          "navigation_error": 10.557164083173891,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9744439195580131,
+          "ndtw": 0.9744439195580131
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "5002",
+    "num_sub_goals": 4,
+    "osm_path_length": 31,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 31,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 31,
+          "osm_length": 31,
+          "common_nodes": 31
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "7b4e59dea28a4f17aff55905394b6cc0",
+          "osm_end": "7b4e59dea28a4f17aff55905394b6cc0"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "4742",
+    "num_sub_goals": 6,
+    "osm_path_length": 41,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 44,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9318181818181818,
+          "recall": 1.0,
+          "f1": 0.9647058823529412,
+          "sequence_overlap": 1.0,
+          "predicted_length": 44,
+          "osm_length": 41,
+          "common_nodes": 41
+        },
+        "endpoint_distance": {
+          "distance_meters": 29.360342373202368,
+          "is_correct": false,
+          "predicted_end": "4c20c8074b35482484fbf1351265b341",
+          "osm_end": "6df1c2fbfd024d7f8ad4767a5c2208d0"
+        },
+        "nav_metrics": {
+          "navigation_error": 29.360342373202368,
+          "success": false,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.0,
+          "ndtw": 0.8650021111082583
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "10065",
+    "num_sub_goals": 3,
+    "osm_path_length": 40,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 4,
+        "expanded_path_length": 40,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 40,
+          "osm_length": 40,
+          "common_nodes": 40
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "dc64e1512c314772b21aaf3c4c325d29",
+          "osm_end": "dc64e1512c314772b21aaf3c4c325d29"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "11263",
+    "num_sub_goals": 6,
+    "osm_path_length": 29,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 29,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 29,
+          "osm_length": 29,
+          "common_nodes": 29
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "4a9a6e64f8514dba8f58f89aefa9870c",
+          "osm_end": "4a9a6e64f8514dba8f58f89aefa9870c"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "10697",
+    "num_sub_goals": 5,
+    "osm_path_length": 39,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 40,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.975,
+          "recall": 1.0,
+          "f1": 0.9873417721518987,
+          "sequence_overlap": 1.0,
+          "predicted_length": 40,
+          "osm_length": 39,
+          "common_nodes": 39
+        },
+        "endpoint_distance": {
+          "distance_meters": 10.58925906696542,
+          "is_correct": true,
+          "predicted_end": "6e9b0c401e274e17bf8172c5c8d21f57",
+          "osm_end": "79c505772ad44d56a4edadfa4d0a46e0"
+        },
+        "nav_metrics": {
+          "navigation_error": 10.58925906696542,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9729124824168246,
+          "ndtw": 0.9729124824168246
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "3764",
+    "num_sub_goals": 4,
+    "osm_path_length": 38,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 5,
+        "expanded_path_length": 38,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 38,
+          "osm_length": 38,
+          "common_nodes": 38
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "42432097",
+          "osm_end": "42432097"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "4830",
+    "num_sub_goals": 6,
+    "osm_path_length": 42,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 8,
+        "expanded_path_length": 44,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9545454545454546,
+          "recall": 1.0,
+          "f1": 0.9767441860465117,
+          "sequence_overlap": 1.0,
+          "predicted_length": 44,
+          "osm_length": 42,
+          "common_nodes": 42
+        },
+        "endpoint_distance": {
+          "distance_meters": 19.163645565484142,
+          "is_correct": true,
+          "predicted_end": "e4da5c0c8fa442f2920c43403adf1d53",
+          "osm_end": "f06a56497ee94e33a93026162086b905"
+        },
+        "nav_metrics": {
+          "navigation_error": 19.163645565484142,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9323358132486815,
+          "ndtw": 0.9323358132486815
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "4224",
+    "num_sub_goals": 4,
+    "osm_path_length": 36,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 37,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.972972972972973,
+          "recall": 1.0,
+          "f1": 0.9863013698630138,
+          "sequence_overlap": 1.0,
+          "predicted_length": 37,
+          "osm_length": 36,
+          "common_nodes": 36
+        },
+        "endpoint_distance": {
+          "distance_meters": 10.03047161248779,
+          "is_correct": true,
+          "predicted_end": "6eb92e9f38b5419089d5cc32b4ad4bf1",
+          "osm_end": "8a2e497b79854c68b1f5115a6a1c62b2"
+        },
+        "nav_metrics": {
+          "navigation_error": 10.03047161248779,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9716350090032009,
+          "ndtw": 0.9716350090032009
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "6415",
+    "num_sub_goals": 3,
+    "osm_path_length": 39,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 39,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 39,
+          "osm_length": 39,
+          "common_nodes": 39
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "42440170",
+          "osm_end": "42440170"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "2329",
+    "num_sub_goals": 5,
+    "osm_path_length": 34,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 8,
+        "expanded_path_length": 30,
+        "path_overlap": {
+          "overlap_ratio": 0.5294117647058824,
+          "precision": 0.6,
+          "recall": 0.5294117647058824,
+          "f1": 0.5625,
+          "sequence_overlap": 0.5294117647058824,
+          "predicted_length": 30,
+          "osm_length": 34,
+          "common_nodes": 18
+        },
+        "endpoint_distance": {
+          "distance_meters": 157.80918386344632,
+          "is_correct": false,
+          "predicted_end": "42432241",
+          "osm_end": "c4d820da522b425cbb441e21a4758472"
+        },
+        "nav_metrics": {
+          "navigation_error": 157.80918386344632,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 104.18169213314269,
+          "sdtw": 0.0,
+          "ndtw": 0.019277094979106433
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "11868",
+    "num_sub_goals": 5,
+    "osm_path_length": 34,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 8,
+        "expanded_path_length": 35,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9714285714285714,
+          "recall": 1.0,
+          "f1": 0.9855072463768115,
+          "sequence_overlap": 1.0,
+          "predicted_length": 35,
+          "osm_length": 34,
+          "common_nodes": 34
+        },
+        "endpoint_distance": {
+          "distance_meters": 9.98635730894243,
+          "is_correct": true,
+          "predicted_end": "4bcedf89fed9450798dfbf3d34655420",
+          "osm_end": "efc9fc9bb25a44c9ae1b51b6fa3197f3"
+        },
+        "nav_metrics": {
+          "navigation_error": 9.98635730894243,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9697706064790406,
+          "ndtw": 0.9697706064790406
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "6220",
+    "num_sub_goals": 4,
+    "osm_path_length": 37,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 38,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9736842105263158,
+          "recall": 1.0,
+          "f1": 0.9866666666666666,
+          "sequence_overlap": 1.0,
+          "predicted_length": 38,
+          "osm_length": 37,
+          "common_nodes": 37
+        },
+        "endpoint_distance": {
+          "distance_meters": 9.849793968673785,
+          "is_correct": true,
+          "predicted_end": "42437686",
+          "osm_end": "d4a38fdb2def4c30976401f095304cda"
+        },
+        "nav_metrics": {
+          "navigation_error": 9.849793968673785,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9725813656942552,
+          "ndtw": 0.9725813656942552
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "12181",
+    "num_sub_goals": 6,
+    "osm_path_length": 34,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 34,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 34,
+          "osm_length": 34,
+          "common_nodes": 34
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "b52224fb3455480ea4c56e8e7db1d3dc",
+          "osm_end": "b52224fb3455480ea4c56e8e7db1d3dc"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "5439",
+    "num_sub_goals": 5,
+    "osm_path_length": 42,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 42,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 42,
+          "osm_length": 42,
+          "common_nodes": 42
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "f345342f3ae04d728deb5e297ffa2026",
+          "osm_end": "f345342f3ae04d728deb5e297ffa2026"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "10773",
+    "num_sub_goals": 6,
+    "osm_path_length": 37,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 32,
+        "path_overlap": {
+          "overlap_ratio": 0.8648648648648649,
+          "precision": 1.0,
+          "recall": 0.8648648648648649,
+          "f1": 0.927536231884058,
+          "sequence_overlap": 0.8648648648648649,
+          "predicted_length": 32,
+          "osm_length": 37,
+          "common_nodes": 32
+        },
+        "endpoint_distance": {
+          "distance_meters": 48.838490490653996,
+          "is_correct": false,
+          "predicted_end": "5c4d7dc7fd4b484d9d75e213d33caea9",
+          "osm_end": "6ca04477bbf941dcb128f1fd2b3ccc3d"
+        },
+        "nav_metrics": {
+          "navigation_error": 48.838490490653996,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 48.838490490653996,
+          "sdtw": 0.0,
+          "ndtw": 0.6569737962050414
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "4606",
+    "num_sub_goals": 6,
+    "osm_path_length": 43,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 44,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9772727272727273,
+          "recall": 1.0,
+          "f1": 0.9885057471264368,
+          "sequence_overlap": 1.0,
+          "predicted_length": 44,
+          "osm_length": 43,
+          "common_nodes": 43
+        },
+        "endpoint_distance": {
+          "distance_meters": 10.055782310310384,
+          "is_correct": true,
+          "predicted_end": "42428277",
+          "osm_end": "1cf07245a31740ab8d3d9e57b66a152b"
+        },
+        "nav_metrics": {
+          "navigation_error": 10.055782310310384,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9763739873740027,
+          "ndtw": 0.9763739873740027
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "6199",
+    "num_sub_goals": 5,
+    "osm_path_length": 31,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 31,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 31,
+          "osm_length": 31,
+          "common_nodes": 31
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "552523b3c77040fc958bdf09cb1c2568",
+          "osm_end": "552523b3c77040fc958bdf09cb1c2568"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "5261",
+    "num_sub_goals": 3,
+    "osm_path_length": 35,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 8,
+        "expanded_path_length": 55,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.6363636363636364,
+          "recall": 1.0,
+          "f1": 0.7777777777777778,
+          "sequence_overlap": 1.0,
+          "predicted_length": 55,
+          "osm_length": 35,
+          "common_nodes": 35
+        },
+        "endpoint_distance": {
+          "distance_meters": 199.1474294468694,
+          "is_correct": false,
+          "predicted_end": "4c7cbf84eb6d4343a767a3b36700a5d4",
+          "osm_end": "be386eb7fa5b4d22a59d11ddc76bbd6a"
+        },
+        "nav_metrics": {
+          "navigation_error": 199.1474294468694,
+          "success": false,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.0,
+          "ndtw": 0.0021467452473703567
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "4240",
+    "num_sub_goals": 3,
+    "osm_path_length": 42,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 4,
+        "expanded_path_length": 42,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 42,
+          "osm_length": 42,
+          "common_nodes": 42
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "42435618",
+          "osm_end": "42435618"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "11453",
+    "num_sub_goals": 10,
+    "osm_path_length": 34,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 11,
+        "expanded_path_length": 35,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9714285714285714,
+          "recall": 1.0,
+          "f1": 0.9855072463768115,
+          "sequence_overlap": 1.0,
+          "predicted_length": 35,
+          "osm_length": 34,
+          "common_nodes": 34
+        },
+        "endpoint_distance": {
+          "distance_meters": 10.282918847433239,
+          "is_correct": true,
+          "predicted_end": "f871034382cb4d3eba2365524ef91a20",
+          "osm_end": "1b5292a1eeff4fb39c9559401b32fdef"
+        },
+        "nav_metrics": {
+          "navigation_error": 10.282918847433239,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9695024768152944,
+          "ndtw": 0.9695024768152944
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "2248",
+    "num_sub_goals": 3,
+    "osm_path_length": 45,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 4,
+        "expanded_path_length": 45,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 45,
+          "osm_length": 45,
+          "common_nodes": 45
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "2f5980a3ffa44e6aa5249cdae031f7a5",
+          "osm_end": "2f5980a3ffa44e6aa5249cdae031f7a5"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "3201",
+    "num_sub_goals": 5,
+    "osm_path_length": 39,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 39,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 39,
+          "osm_length": 39,
+          "common_nodes": 39
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "3edd2edcf0d7486b8f44c15966bac0fd",
+          "osm_end": "3edd2edcf0d7486b8f44c15966bac0fd"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "9974",
+    "num_sub_goals": 8,
+    "osm_path_length": 36,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 9,
+        "expanded_path_length": 36,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 36,
+          "osm_length": 36,
+          "common_nodes": 36
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "591566825",
+          "osm_end": "591566825"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "3961",
+    "num_sub_goals": 4,
+    "osm_path_length": 35,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 5,
+        "expanded_path_length": 35,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 35,
+          "osm_length": 35,
+          "common_nodes": 35
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "25ee1c4c34e84cbb8f81d869b8afa6f4",
+          "osm_end": "25ee1c4c34e84cbb8f81d869b8afa6f4"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "7364",
+    "num_sub_goals": 3,
+    "osm_path_length": 41,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 5,
+        "expanded_path_length": 37,
+        "path_overlap": {
+          "overlap_ratio": 0.34146341463414637,
+          "precision": 0.3783783783783784,
+          "recall": 0.34146341463414637,
+          "f1": 0.35897435897435903,
+          "sequence_overlap": 0.34146341463414637,
+          "predicted_length": 37,
+          "osm_length": 41,
+          "common_nodes": 14
+        },
+        "endpoint_distance": {
+          "distance_meters": 85.1295162394433,
+          "is_correct": false,
+          "predicted_end": "42453166",
+          "osm_end": "084d779dfab74a20aef5eb5b3d7f3825"
+        },
+        "nav_metrics": {
+          "navigation_error": 85.1295162394433,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 75.52727232940737,
+          "sdtw": 0.0,
+          "ndtw": 0.0064965864984684
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "10347",
+    "num_sub_goals": 4,
+    "osm_path_length": 36,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 5,
+        "expanded_path_length": 36,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 36,
+          "osm_length": 36,
+          "common_nodes": 36
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "6b4f26d998b34a0e96bb15da791224ff",
+          "osm_end": "6b4f26d998b34a0e96bb15da791224ff"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "11793",
+    "num_sub_goals": 6,
+    "osm_path_length": 32,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 32,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 32,
+          "osm_length": 32,
+          "common_nodes": 32
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "01038290b510457387a281ded81b6ac1",
+          "osm_end": "01038290b510457387a281ded81b6ac1"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "7182",
+    "num_sub_goals": 7,
+    "osm_path_length": 40,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 30,
+        "path_overlap": {
+          "overlap_ratio": 0.75,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571,
+          "sequence_overlap": 0.75,
+          "predicted_length": 30,
+          "osm_length": 40,
+          "common_nodes": 30
+        },
+        "endpoint_distance": {
+          "distance_meters": 100.57145517778727,
+          "is_correct": false,
+          "predicted_end": "42452107",
+          "osm_end": "096bf483d138494fbcd446c30a9321d1"
+        },
+        "nav_metrics": {
+          "navigation_error": 100.57145517778727,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 100.57145517778727,
+          "sdtw": 0.0,
+          "ndtw": 0.24156291110724595
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "2304",
+    "num_sub_goals": 5,
+    "osm_path_length": 43,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 8,
+        "expanded_path_length": 39,
+        "path_overlap": {
+          "overlap_ratio": 0.4418604651162791,
+          "precision": 0.48717948717948717,
+          "recall": 0.4418604651162791,
+          "f1": 0.46341463414634154,
+          "sequence_overlap": 0.4418604651162791,
+          "predicted_length": 39,
+          "osm_length": 43,
+          "common_nodes": 19
+        },
+        "endpoint_distance": {
+          "distance_meters": 296.57162803226134,
+          "is_correct": false,
+          "predicted_end": "cd8018678f5c4ba4a443f81d3285efd2",
+          "osm_end": "42430217"
+        },
+        "nav_metrics": {
+          "navigation_error": 296.57162803226134,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 235.67042269444488,
+          "sdtw": 0.0,
+          "ndtw": 0.00023563628672866152
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "5698",
+    "num_sub_goals": 3,
+    "osm_path_length": 33,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 4,
+        "expanded_path_length": 33,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 33,
+          "osm_length": 33,
+          "common_nodes": 33
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "42435680",
+          "osm_end": "42435680"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "4816",
+    "num_sub_goals": 4,
+    "osm_path_length": 45,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 5,
+        "expanded_path_length": 38,
+        "path_overlap": {
+          "overlap_ratio": 0.6222222222222222,
+          "precision": 0.7368421052631579,
+          "recall": 0.6222222222222222,
+          "f1": 0.6746987951807228,
+          "sequence_overlap": 0.6222222222222222,
+          "predicted_length": 38,
+          "osm_length": 45,
+          "common_nodes": 28
+        },
+        "endpoint_distance": {
+          "distance_meters": 69.73108818918355,
+          "is_correct": false,
+          "predicted_end": "cd73160d817c47cd8fe8ea44e54f58c4",
+          "osm_end": "dba099da73e249dd86bd1953f1126d26"
+        },
+        "nav_metrics": {
+          "navigation_error": 69.73108818918355,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 69.73108818918355,
+          "sdtw": 0.0,
+          "ndtw": 0.4347380285444029
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "4291",
+    "num_sub_goals": 4,
+    "osm_path_length": 33,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 39,
+        "path_overlap": {
+          "overlap_ratio": 0.7878787878787878,
+          "precision": 0.6666666666666666,
+          "recall": 0.7878787878787878,
+          "f1": 0.7222222222222221,
+          "sequence_overlap": 0.7878787878787878,
+          "predicted_length": 39,
+          "osm_length": 33,
+          "common_nodes": 26
+        },
+        "endpoint_distance": {
+          "distance_meters": 82.34887096725747,
+          "is_correct": false,
+          "predicted_end": "8a4285640b884960ab9bd5014636c8cb",
+          "osm_end": "c0cea26e066d4aed9c802fafb3fd6e82"
+        },
+        "nav_metrics": {
+          "navigation_error": 82.34887096725747,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 70.07929190975996,
+          "sdtw": 0.0,
+          "ndtw": 0.09477595260279777
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "11046",
+    "num_sub_goals": 6,
+    "osm_path_length": 34,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 35,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9714285714285714,
+          "recall": 1.0,
+          "f1": 0.9855072463768115,
+          "sequence_overlap": 1.0,
+          "predicted_length": 35,
+          "osm_length": 34,
+          "common_nodes": 34
+        },
+        "endpoint_distance": {
+          "distance_meters": 9.9025034128682,
+          "is_correct": true,
+          "predicted_end": "e50c2bd5151346169e347322cdff797c",
+          "osm_end": "cca127bfccaa49e0bb42b292965eb9e9"
+        },
+        "nav_metrics": {
+          "navigation_error": 9.9025034128682,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9698818069055791,
+          "ndtw": 0.9698818069055791
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "12751",
+    "num_sub_goals": 8,
+    "osm_path_length": 39,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 4,
+        "expanded_path_length": 21,
+        "path_overlap": {
+          "overlap_ratio": 0.02564102564102564,
+          "precision": 0.047619047619047616,
+          "recall": 0.02564102564102564,
+          "f1": 0.03333333333333333,
+          "sequence_overlap": 0.02564102564102564,
+          "predicted_length": 21,
+          "osm_length": 39,
+          "common_nodes": 1
+        },
+        "endpoint_distance": {
+          "distance_meters": 158.52251901061928,
+          "is_correct": false,
+          "predicted_end": "a441063a056a438ba8386b4b8c5d5b54",
+          "osm_end": "21448241a3bc457ea0d8cb453587278c"
+        },
+        "nav_metrics": {
+          "navigation_error": 158.52251901061928,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 107.04960195490308,
+          "sdtw": 0.0,
+          "ndtw": 1.3377878403594751e-06
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "10426",
+    "num_sub_goals": 5,
+    "osm_path_length": 39,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 38,
+        "path_overlap": {
+          "overlap_ratio": 0.9743589743589743,
+          "precision": 1.0,
+          "recall": 0.9743589743589743,
+          "f1": 0.9870129870129869,
+          "sequence_overlap": 0.9743589743589743,
+          "predicted_length": 38,
+          "osm_length": 39,
+          "common_nodes": 38
+        },
+        "endpoint_distance": {
+          "distance_meters": 10.171841824054363,
+          "is_correct": true,
+          "predicted_end": "b06da587003945bd8688203274d43f98",
+          "osm_end": "6ed9fca9e34246a5b822aa0792c9e185"
+        },
+        "nav_metrics": {
+          "navigation_error": 10.171841824054363,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 10.171841824054363,
+          "sdtw": 0.9739704427938715,
+          "ndtw": 0.9739704427938715
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "10789",
+    "num_sub_goals": 6,
+    "osm_path_length": 36,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 36,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 36,
+          "osm_length": 36,
+          "common_nodes": 36
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "cca127bfccaa49e0bb42b292965eb9e9",
+          "osm_end": "cca127bfccaa49e0bb42b292965eb9e9"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "11070",
+    "num_sub_goals": 3,
+    "osm_path_length": 34,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 43,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.7906976744186046,
+          "recall": 1.0,
+          "f1": 0.8831168831168831,
+          "sequence_overlap": 1.0,
+          "predicted_length": 43,
+          "osm_length": 34,
+          "common_nodes": 34
+        },
+        "endpoint_distance": {
+          "distance_meters": 85.67749458988465,
+          "is_correct": false,
+          "predicted_end": "af4de95c1e6643a983c1063ab5db79a2",
+          "osm_end": "d0a9c65cc8d24a6b8db925e5dc7cd072"
+        },
+        "nav_metrics": {
+          "navigation_error": 85.67749458988465,
+          "success": false,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.0,
+          "ndtw": 0.2784687485105407
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "5086",
+    "num_sub_goals": 3,
+    "osm_path_length": 41,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 4,
+        "expanded_path_length": 41,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 41,
+          "osm_length": 41,
+          "common_nodes": 41
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "42439830",
+          "osm_end": "42439830"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "1994",
+    "num_sub_goals": 4,
+    "osm_path_length": 35,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 4,
+        "expanded_path_length": 29,
+        "path_overlap": {
+          "overlap_ratio": 0.8285714285714286,
+          "precision": 1.0,
+          "recall": 0.8285714285714286,
+          "f1": 0.90625,
+          "sequence_overlap": 0.8285714285714286,
+          "predicted_length": 29,
+          "osm_length": 35,
+          "common_nodes": 29
+        },
+        "endpoint_distance": {
+          "distance_meters": 63.45265587709238,
+          "is_correct": false,
+          "predicted_end": "bf53328746554a6c82b8c0da06aacb22",
+          "osm_end": "42437280"
+        },
+        "nav_metrics": {
+          "navigation_error": 63.45265587709238,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 63.45265587709238,
+          "sdtw": 0.0,
+          "ndtw": 0.5231365164399564
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "4688",
+    "num_sub_goals": 5,
+    "osm_path_length": 37,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 37,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 37,
+          "osm_length": 37,
+          "common_nodes": 37
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "6b7efffb353b43dda9912390e087c8a2",
+          "osm_end": "6b7efffb353b43dda9912390e087c8a2"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "3450",
+    "num_sub_goals": 5,
+    "osm_path_length": 41,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 8,
+        "expanded_path_length": 40,
+        "path_overlap": {
+          "overlap_ratio": 0.975609756097561,
+          "precision": 1.0,
+          "recall": 0.975609756097561,
+          "f1": 0.9876543209876543,
+          "sequence_overlap": 0.975609756097561,
+          "predicted_length": 40,
+          "osm_length": 41,
+          "common_nodes": 40
+        },
+        "endpoint_distance": {
+          "distance_meters": 9.611885470820983,
+          "is_correct": true,
+          "predicted_end": "b32f1ffe728b49219675f8782e9f30b6",
+          "osm_end": "44a8276cbdb041bca0bcd64d90b0580b"
+        },
+        "nav_metrics": {
+          "navigation_error": 9.611885470820983,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 9.611885470820983,
+          "sdtw": 0.9754779258600879,
+          "ndtw": 0.9754779258600879
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "5564",
+    "num_sub_goals": 4,
+    "osm_path_length": 38,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 5,
+        "expanded_path_length": 38,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 38,
+          "osm_length": 38,
+          "common_nodes": 38
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "42437096",
+          "osm_end": "42437096"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "4517",
+    "num_sub_goals": 5,
+    "osm_path_length": 32,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 32,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 32,
+          "osm_length": 32,
+          "common_nodes": 32
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "42438174",
+          "osm_end": "42438174"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "2553",
+    "num_sub_goals": 4,
+    "osm_path_length": 37,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 37,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 37,
+          "osm_length": 37,
+          "common_nodes": 37
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "42436856",
+          "osm_end": "42436856"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "10660",
+    "num_sub_goals": 5,
+    "osm_path_length": 36,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 35,
+        "path_overlap": {
+          "overlap_ratio": 0.9722222222222222,
+          "precision": 1.0,
+          "recall": 0.9722222222222222,
+          "f1": 0.9859154929577464,
+          "sequence_overlap": 0.9722222222222222,
+          "predicted_length": 35,
+          "osm_length": 36,
+          "common_nodes": 35
+        },
+        "endpoint_distance": {
+          "distance_meters": 10.207471484707138,
+          "is_correct": true,
+          "predicted_end": "102e1ceea6f0484091ed33d507d68a81",
+          "osm_end": "36cda8c4ced44e30ade8410f6c751e94"
+        },
+        "nav_metrics": {
+          "navigation_error": 10.207471484707138,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 10.207471484707138,
+          "sdtw": 0.9710157253742977,
+          "ndtw": 0.9710157253742977
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "4049",
+    "num_sub_goals": 6,
+    "osm_path_length": 34,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 47,
+        "path_overlap": {
+          "overlap_ratio": 0.9411764705882353,
+          "precision": 0.6808510638297872,
+          "recall": 0.9411764705882353,
+          "f1": 0.7901234567901235,
+          "sequence_overlap": 0.9411764705882353,
+          "predicted_length": 47,
+          "osm_length": 34,
+          "common_nodes": 32
+        },
+        "endpoint_distance": {
+          "distance_meters": 133.25489342227976,
+          "is_correct": false,
+          "predicted_end": "ee9f65434b0a4e8f83cfeb6f3ff35fda",
+          "osm_end": "5875601a3d4b484b8e7837a8408ba8ad"
+        },
+        "nav_metrics": {
+          "navigation_error": 133.25489342227976,
+          "success": false,
+          "oracle_success": true,
+          "min_distance_to_goal": 13.966501800383998,
+          "sdtw": 0.0,
+          "ndtw": 0.024659699629244268
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "12783",
+    "num_sub_goals": 3,
+    "osm_path_length": 33,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 4,
+        "expanded_path_length": 33,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 33,
+          "osm_length": 33,
+          "common_nodes": 33
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "e7928fecdab14dbeb193b4f7a8246cea",
+          "osm_end": "e7928fecdab14dbeb193b4f7a8246cea"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "7018",
+    "num_sub_goals": 6,
+    "osm_path_length": 42,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 42,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 42,
+          "osm_length": 42,
+          "common_nodes": 42
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "3ca706fc1e2841dc8d93ed3f563ca820",
+          "osm_end": "3ca706fc1e2841dc8d93ed3f563ca820"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "4788",
+    "num_sub_goals": 4,
+    "osm_path_length": 40,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 39,
+        "path_overlap": {
+          "overlap_ratio": 0.975,
+          "precision": 1.0,
+          "recall": 0.975,
+          "f1": 0.9873417721518987,
+          "sequence_overlap": 0.975,
+          "predicted_length": 39,
+          "osm_length": 40,
+          "common_nodes": 39
+        },
+        "endpoint_distance": {
+          "distance_meters": 10.142304215410997,
+          "is_correct": true,
+          "predicted_end": "58f131b3f97b44b7acadbf22726947fb",
+          "osm_end": "86436e8e68874a8389755ea19270c328"
+        },
+        "nav_metrics": {
+          "navigation_error": 10.142304215410997,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 10.142304215410997,
+          "sdtw": 0.9743842412914983,
+          "ndtw": 0.9743842412914983
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "2223",
+    "num_sub_goals": 4,
+    "osm_path_length": 42,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 40,
+        "path_overlap": {
+          "overlap_ratio": 0.9523809523809523,
+          "precision": 1.0,
+          "recall": 0.9523809523809523,
+          "f1": 0.975609756097561,
+          "sequence_overlap": 0.9523809523809523,
+          "predicted_length": 40,
+          "osm_length": 42,
+          "common_nodes": 40
+        },
+        "endpoint_distance": {
+          "distance_meters": 18.869018351670984,
+          "is_correct": true,
+          "predicted_end": "3c087e7fd1ca4b8eb8229a6d35d07fa1",
+          "osm_end": "30c362e4d84046c996b01b6d84e54721"
+        },
+        "nav_metrics": {
+          "navigation_error": 18.869018351670984,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 18.869018351670984,
+          "sdtw": 0.9330777227915503,
+          "ndtw": 0.9330777227915503
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "11604",
+    "num_sub_goals": 5,
+    "osm_path_length": 40,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 9,
+        "expanded_path_length": 60,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "sequence_overlap": 1.0,
+          "predicted_length": 60,
+          "osm_length": 40,
+          "common_nodes": 40
+        },
+        "endpoint_distance": {
+          "distance_meters": 210.97313711038254,
+          "is_correct": false,
+          "predicted_end": "16235f6f891a4c71ba5f936fa9de70d6",
+          "osm_end": "68e22a05f2ea4f7688dfe13342899a4e"
+        },
+        "nav_metrics": {
+          "navigation_error": 210.97313711038254,
+          "success": false,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.0,
+          "ndtw": 0.0034072577588230824
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "3070",
+    "num_sub_goals": 4,
+    "osm_path_length": 32,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 34,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9411764705882353,
+          "recall": 1.0,
+          "f1": 0.9696969696969697,
+          "sequence_overlap": 1.0,
+          "predicted_length": 34,
+          "osm_length": 32,
+          "common_nodes": 32
+        },
+        "endpoint_distance": {
+          "distance_meters": 21.30259092854687,
+          "is_correct": true,
+          "predicted_end": "f6b879f1e65d4c168623dda2b2ad8392",
+          "osm_end": "42442910"
+        },
+        "nav_metrics": {
+          "navigation_error": 21.30259092854687,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9003399341450793,
+          "ndtw": 0.9003399341450793
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "11074",
+    "num_sub_goals": 4,
+    "osm_path_length": 32,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 5,
+        "expanded_path_length": 32,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 32,
+          "osm_length": 32,
+          "common_nodes": 32
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "60c47ab357bf4610aa82081d0b21a1e3",
+          "osm_end": "60c47ab357bf4610aa82081d0b21a1e3"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "12866",
+    "num_sub_goals": 8,
+    "osm_path_length": 34,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 9,
+        "expanded_path_length": 36,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9444444444444444,
+          "recall": 1.0,
+          "f1": 0.9714285714285714,
+          "sequence_overlap": 1.0,
+          "predicted_length": 36,
+          "osm_length": 34,
+          "common_nodes": 34
+        },
+        "endpoint_distance": {
+          "distance_meters": 22.526554108935063,
+          "is_correct": true,
+          "predicted_end": "42437959",
+          "osm_end": "1713c41d92514861a222b028a57d26e1"
+        },
+        "nav_metrics": {
+          "navigation_error": 22.526554108935063,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9033136418985298,
+          "ndtw": 0.9033136418985298
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "10474",
+    "num_sub_goals": 5,
+    "osm_path_length": 44,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 44,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 44,
+          "osm_length": 44,
+          "common_nodes": 44
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "42431452",
+          "osm_end": "42431452"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "2715",
+    "num_sub_goals": 3,
+    "osm_path_length": 38,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 39,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 0.9743589743589743,
+          "recall": 1.0,
+          "f1": 0.9870129870129869,
+          "sequence_overlap": 1.0,
+          "predicted_length": 39,
+          "osm_length": 38,
+          "common_nodes": 38
+        },
+        "endpoint_distance": {
+          "distance_meters": 10.138343475596308,
+          "is_correct": true,
+          "predicted_end": "9d608203533a4a21b8397ee766da93ee",
+          "osm_end": "d2a55889ac064318930c829f47ee1ad3"
+        },
+        "nav_metrics": {
+          "navigation_error": 10.138343475596308,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 0.9729497544271108,
+          "ndtw": 0.9729497544271108
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "3782",
+    "num_sub_goals": 4,
+    "osm_path_length": 38,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 7,
+        "expanded_path_length": 38,
+        "path_overlap": {
+          "overlap_ratio": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "sequence_overlap": 1.0,
+          "predicted_length": 38,
+          "osm_length": 38,
+          "common_nodes": 38
+        },
+        "endpoint_distance": {
+          "distance_meters": 0.0,
+          "is_correct": true,
+          "predicted_end": "42432438",
+          "osm_end": "42432438"
+        },
+        "nav_metrics": {
+          "navigation_error": 0.0,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 0.0,
+          "sdtw": 1.0,
+          "ndtw": 1.0
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "12176",
+    "num_sub_goals": 3,
+    "osm_path_length": 35,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 5,
+        "expanded_path_length": 34,
+        "path_overlap": {
+          "overlap_ratio": 0.9714285714285714,
+          "precision": 1.0,
+          "recall": 0.9714285714285714,
+          "f1": 0.9855072463768115,
+          "sequence_overlap": 0.9714285714285714,
+          "predicted_length": 34,
+          "osm_length": 35,
+          "common_nodes": 34
+        },
+        "endpoint_distance": {
+          "distance_meters": 9.763050143532471,
+          "is_correct": true,
+          "predicted_end": "314b0dd059314369998459c70b503e0d",
+          "osm_end": "2088bc7a61a74059ab135661f03e3665"
+        },
+        "nav_metrics": {
+          "navigation_error": 9.763050143532471,
+          "success": true,
+          "oracle_success": true,
+          "min_distance_to_goal": 9.763050143532471,
+          "sdtw": 0.9710074091569553,
+          "ndtw": 0.9710074091569553
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  },
+  {
+    "key": "3578",
+    "num_sub_goals": 4,
+    "osm_path_length": 42,
+    "methods": {
+      "json": {
+        "status": "DONE",
+        "is_completely_wrong": false,
+        "num_waypoints": 6,
+        "expanded_path_length": 39,
+        "path_overlap": {
+          "overlap_ratio": 0.8571428571428571,
+          "precision": 0.9230769230769231,
+          "recall": 0.8571428571428571,
+          "f1": 0.888888888888889,
+          "sequence_overlap": 0.8571428571428571,
+          "predicted_length": 39,
+          "osm_length": 42,
+          "common_nodes": 36
+        },
+        "endpoint_distance": {
+          "distance_meters": 64.85312636146288,
+          "is_correct": false,
+          "predicted_end": "c829721108fb4866b603bbef45dd4772",
+          "osm_end": "54fef25559a44ff58fd317c8ed4d3115"
+        },
+        "nav_metrics": {
+          "navigation_error": 64.85312636146288,
+          "success": false,
+          "oracle_success": false,
+          "min_distance_to_goal": 50.790476472188686,
+          "sdtw": 0.0,
+          "ndtw": 0.5854676235931413
+        }
+      },
+      "textual": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "graph_vis": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      },
+      "grid": {
+        "status": "MISSING",
+        "path_overlap": null,
+        "endpoint_distance": null
+      }
+    }
+  }
+]

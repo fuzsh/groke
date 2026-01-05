@@ -1,0 +1,1607 @@
+{
+    "11793": [
+        {
+            "name": "park",
+            "category": "amenity",
+            "score": 0.7600215077400208
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.5815221071243286
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.6621220111846924
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.640929102897644
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.7456662654876709
+        },
+        {
+            "name": "Roasting Plant",
+            "category": "cuisine",
+            "score": 0.679448127746582
+        },
+        {
+            "name": "Mooshoes",
+            "category": "shop",
+            "score": 0.9703092575073242
+        },
+        {
+            "name": "An Choi",
+            "category": "cuisine",
+            "score": 0.9323024749755859
+        },
+        {
+            "name": "Sticky Rice",
+            "category": "cuisine",
+            "score": 0.8632435202598572
+        }
+    ],
+    "10347": [
+        {
+            "name": "Hong Kong Supermarket",
+            "category": "shop",
+            "score": 0.9504883289337158
+        }
+    ],
+    "2478": [
+        {
+            "name": "Marmara",
+            "category": "tourism",
+            "score": 0.7920146584510803
+        },
+        {
+            "name": "bike rental",
+            "category": "shop",
+            "score": 0.7010489106178284
+        }
+    ],
+    "3538": [
+        {
+            "name": "Duane Reade",
+            "category": "shop",
+            "score": 0.9881135821342468
+        },
+        {
+            "name": "Rite Aid",
+            "category": "shop",
+            "score": 0.9675190448760986
+        },
+        {
+            "name": "Social Lounge",
+            "category": "leisure",
+            "score": 0.8184424638748169
+        }
+    ],
+    "12839": [
+        {
+            "name": "Murry Hill Diner",
+            "category": "cuisine",
+            "score": 0.6211031675338745
+        },
+        {
+            "name": "Brother Jimmy's BBQ",
+            "category": "cuisine",
+            "score": 0.8027803301811218
+        },
+        {
+            "name": "Old Print Shop",
+            "category": "shop",
+            "score": 0.9913602471351624
+        }
+    ],
+    "6220": [
+        {
+            "name": "Chipotle",
+            "category": "cuisine",
+            "score": 0.676607072353363
+        },
+        {
+            "name": "bike rentals",
+            "category": "tourism",
+            "score": 0.8326087594032288
+        },
+        {
+            "name": "Cafe au bon gout",
+            "category": "shop",
+            "score": 0.9292616248130798
+        }
+    ],
+    "10426": [
+        {
+            "name": "bus stop",
+            "category": "transportation",
+            "score": 0.8872970938682556
+        },
+        {
+            "name": "playground",
+            "category": "leisure",
+            "score": 0.9424821138381958
+        },
+        {
+            "name": "tiny garden",
+            "category": "leisure",
+            "score": 0.7443559169769287
+        },
+        {
+            "name": "street",
+            "category": "transportation",
+            "score": 0.534405529499054
+        },
+        {
+            "name": "7-Eleven",
+            "category": "shop",
+            "score": 0.9928545355796814
+        }
+    ],
+    "2248": [
+        {
+            "name": "Pure Thai Cookhouse",
+            "category": "shop",
+            "score": 0.9266805648803711
+        },
+        {
+            "name": "Island Burger and Shakes",
+            "category": "shop",
+            "score": 0.9853836894035339
+        }
+    ],
+    "5086": [
+        {
+            "name": "Capital One",
+            "category": "shop",
+            "score": 0.8308298587799072
+        },
+        {
+            "name": "Pottery Barn",
+            "category": "shop",
+            "score": 0.9854874610900879
+        },
+        {
+            "name": "Loehmann's",
+            "category": "shop",
+            "score": 0.7575523853302002
+        }
+    ],
+    "12181": [
+        {
+            "name": "Simply Hooked",
+            "category": "shop",
+            "score": 0.9706113934516907
+        },
+        {
+            "name": "small garden",
+            "category": "amenity",
+            "score": 0.7143219709396362
+        },
+        {
+            "name": "Nebulous Gaming",
+            "category": "shop",
+            "score": 0.9765441417694092
+        }
+    ],
+    "2304": [
+        {
+            "name": "road",
+            "category": "transportation",
+            "score": 0.8063457012176514
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.6826695799827576
+        },
+        {
+            "name": "Restaurante Waverly",
+            "category": "cuisine",
+            "score": 0.7435417175292969
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.7048858404159546
+        },
+        {
+            "name": "play area",
+            "category": "leisure",
+            "score": 0.9683822989463806
+        }
+    ],
+    "1512": [
+        {
+            "name": "Southern Hospitality",
+            "category": "shop",
+            "score": 0.9504052996635437
+        }
+    ],
+    "5564": [
+        {
+            "name": "The Meatball Shop",
+            "category": "shop",
+            "score": 0.9932793974876404
+        },
+        {
+            "name": "Stanton Social",
+            "category": "shop",
+            "score": 0.9822694659233093
+        },
+        {
+            "name": "Wolfnights",
+            "category": "shop",
+            "score": 0.9551447033882141
+        }
+    ],
+    "6625": [
+        {
+            "name": "Chase",
+            "category": "shop",
+            "score": 0.967542290687561
+        },
+        {
+            "name": "Ruby Tuesday",
+            "category": "shop",
+            "score": 0.9714165329933167
+        },
+        {
+            "name": "Wasabi",
+            "category": "cuisine",
+            "score": 0.9098244905471802
+        }
+    ],
+    "12741": [
+        {
+            "name": "Best Buy",
+            "category": "shop",
+            "score": 0.9735937118530273
+        },
+        {
+            "name": "Starbucks",
+            "category": "shop",
+            "score": 0.9457945823669434
+        },
+        {
+            "name": "Duane Reade",
+            "category": "shop",
+            "score": 0.9802601933479309
+        },
+        {
+            "name": "Mad 46",
+            "category": "shop",
+            "score": 0.9648005366325378
+        },
+        {
+            "name": "Charles Tyrwhitt",
+            "category": "shop",
+            "score": 0.978291392326355
+        }
+    ],
+    "1993": [],
+    "5285": [
+        {
+            "name": "Casa Mono",
+            "category": "shop",
+            "score": 0.8892887830734253
+        },
+        {
+            "name": "TGI Fridays",
+            "category": "shop",
+            "score": 0.8918623328208923
+        }
+    ],
+    "11263": [
+        {
+            "name": "BP",
+            "category": "shop",
+            "score": 0.6878717541694641
+        },
+        {
+            "name": "Enoch's Bike Shop",
+            "category": "shop",
+            "score": 0.9573908448219299
+        }
+    ],
+    "2627": [
+        {
+            "name": "Santander",
+            "category": "shop",
+            "score": 0.6995595097541809
+        }
+    ],
+    "11247": [
+        {
+            "name": "Subway",
+            "category": "transportation",
+            "score": 0.9794750213623047
+        },
+        {
+            "name": "Bank of America",
+            "category": "shop",
+            "score": 0.7948181629180908
+        },
+        {
+            "name": "Zara",
+            "category": "shop",
+            "score": 0.9396753907203674
+        },
+        {
+            "name": "Don Peterson",
+            "category": "shop",
+            "score": 0.9537951946258545
+        }
+    ],
+    "4240": [
+        {
+            "name": "The GEM Hotel",
+            "category": "tourism",
+            "score": 0.9130226969718933
+        },
+        {
+            "name": "Chelsea Florist",
+            "category": "shop",
+            "score": 0.9454361200332642
+        },
+        {
+            "name": "Vibe",
+            "category": "shop",
+            "score": 0.7560099959373474
+        },
+        {
+            "name": "Walgreens",
+            "category": "shop",
+            "score": 0.8290766477584839
+        }
+    ],
+    "12783": [
+        {
+            "name": "Charles Schwab",
+            "category": "shop",
+            "score": 0.7641977071762085
+        },
+        {
+            "name": "New York Edition",
+            "category": "shop",
+            "score": 0.8962319493293762
+        }
+    ],
+    "9974": [
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.6564635038375854
+        },
+        {
+            "name": "pond park",
+            "category": "amenity",
+            "score": 0.522047758102417
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.6740990877151489
+        }
+    ],
+    "4291": [
+        {
+            "name": "lights",
+            "category": "transportation",
+            "score": 0.6105623245239258
+        },
+        {
+            "name": "Eisenberg Sandwich",
+            "category": "shop",
+            "score": 0.9492023587226868
+        }
+    ],
+    "2329": [
+        {
+            "name": "10 Below Ice Cream",
+            "category": "shop",
+            "score": 0.9857668876647949
+        }
+    ],
+    "11604": [
+        {
+            "name": "Subway",
+            "category": "transportation",
+            "score": 0.9893826246261597
+        },
+        {
+            "name": "Jensen-Lewis",
+            "category": "shop",
+            "score": 0.8269116878509521
+        }
+    ],
+    "7364": [
+        {
+            "name": "Boiler Bar",
+            "category": "shop",
+            "score": 0.8581583499908447
+        },
+        {
+            "name": "La Sultana",
+            "category": "shop",
+            "score": 0.7785683274269104
+        }
+    ],
+    "11790": [
+        {
+            "name": "park",
+            "category": "amenity",
+            "score": 0.607426643371582
+        },
+        {
+            "name": "Chase",
+            "category": "shop",
+            "score": 0.9660074710845947
+        },
+        {
+            "name": "CVS",
+            "category": "shop",
+            "score": 0.9680219292640686
+        },
+        {
+            "name": "Duane Reade",
+            "category": "shop",
+            "score": 0.9763794541358948
+        },
+        {
+            "name": "Gabay's",
+            "category": "shop",
+            "score": 0.8732542395591736
+        },
+        {
+            "name": "Subway",
+            "category": "shop",
+            "score": 0.9792757034301758
+        }
+    ],
+    "6876": [
+        {
+            "name": "Fresh&Co",
+            "category": "shop",
+            "score": 0.9835186004638672
+        },
+        {
+            "name": "Pret A Manger",
+            "category": "shop",
+            "score": 0.991310715675354
+        },
+        {
+            "name": "Doctors without Borders",
+            "category": "shop",
+            "score": 0.933967649936676
+        }
+    ],
+    "4830": [
+        {
+            "name": "secret garden",
+            "category": "amenity",
+            "score": 0.8643099665641785
+        },
+        {
+            "name": "Nublu",
+            "category": "shop",
+            "score": 0.981914758682251
+        }
+    ],
+    "11476": [
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.7037392258644104
+        },
+        {
+            "name": "parking lot",
+            "category": "amenity",
+            "score": 0.8564222455024719
+        },
+        {
+            "name": "park",
+            "category": "amenity",
+            "score": 0.7257408499717712
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.6938351392745972
+        }
+    ],
+    "3201": [
+        {
+            "name": "Subway",
+            "category": "shop",
+            "score": 0.920457124710083
+        },
+        {
+            "name": "bus stop",
+            "category": "transportation",
+            "score": 0.8943561315536499
+        },
+        {
+            "name": "Rustic table",
+            "category": "amenity",
+            "score": 0.7968727946281433
+        }
+    ],
+    "5439": [
+        {
+            "name": "GNC Live Well",
+            "category": "shop",
+            "score": 0.9723057746887207
+        },
+        {
+            "name": "New York Doctors",
+            "category": "shop",
+            "score": 0.9776391386985779
+        },
+        {
+            "name": "Murray Hill Market",
+            "category": "shop",
+            "score": 0.9555484652519226
+        }
+    ],
+    "1624": [
+        {
+            "name": "Greenwich Lane",
+            "category": "transportation",
+            "score": 0.5028073787689209
+        },
+        {
+            "name": "Equinox",
+            "category": "shop",
+            "score": 0.990139365196228
+        }
+    ],
+    "4742": [
+        {
+            "name": "garden or square",
+            "category": "amenity",
+            "score": 0.8555905818939209
+        },
+        {
+            "name": "bus stop",
+            "category": "transportation",
+            "score": 0.9557536840438843
+        }
+    ],
+    "10773": [
+        {
+            "name": "Pizza 33",
+            "category": "shop",
+            "score": 0.8690679669380188
+        },
+        {
+            "name": "McDonald",
+            "category": "shop",
+            "score": 0.7125318050384521
+        },
+        {
+            "name": "7-Eleven",
+            "category": "shop",
+            "score": 0.9460372924804688
+        },
+        {
+            "name": "Moonstruck",
+            "category": "shop",
+            "score": 0.9446962475776672
+        },
+        {
+            "name": "Dough Boys",
+            "category": "shop",
+            "score": 0.9217783808708191
+        },
+        {
+            "name": "bike rental",
+            "category": "tourism",
+            "score": 0.617811918258667
+        },
+        {
+            "name": "Brother Jimmy's BBQ",
+            "category": "cuisine",
+            "score": 0.58475661277771
+        }
+    ],
+    "2653": [],
+    "10789": [
+        {
+            "name": "Enoch's bike shop",
+            "category": "shop",
+            "score": 0.9318848252296448
+        },
+        {
+            "name": "park",
+            "category": "amenity",
+            "score": 0.934248685836792
+        }
+    ],
+    "6415": [
+        {
+            "name": "Skyline Hotel",
+            "category": "tourism",
+            "score": 0.8784815669059753
+        },
+        {
+            "name": "As is NYC",
+            "category": "shop",
+            "score": 0.7815697193145752
+        }
+    ],
+    "3432": [
+        {
+            "name": "Barlovento",
+            "category": "tourism",
+            "score": 0.9328691959381104
+        },
+        {
+            "name": "Sunflower Diner",
+            "category": "shop",
+            "score": 0.9610266089439392
+        }
+    ],
+    "5261": [
+        {
+            "name": "Citibank",
+            "category": "shop",
+            "score": 0.5989545583724976
+        },
+        {
+            "name": "Starbucks",
+            "category": "shop",
+            "score": 0.9234998226165771
+        },
+        {
+            "name": "Roast Chicken",
+            "category": "shop",
+            "score": 0.934684693813324
+        }
+    ],
+    "5002": [],
+    "6199": [
+        {
+            "name": "main road",
+            "category": "highway",
+            "score": 0.7887550592422485
+        },
+        {
+            "name": "Buy Rite Pharmacy",
+            "category": "shop",
+            "score": 0.9866918921470642
+        }
+    ],
+    "10660": [
+        {
+            "name": "Starbucks",
+            "category": "shop",
+            "score": 0.9567133188247681
+        },
+        {
+            "name": "Chase",
+            "category": "shop",
+            "score": 0.9309445023536682
+        },
+        {
+            "name": "Glasnost Precious Metals",
+            "category": "shop",
+            "score": 0.8540552258491516
+        },
+        {
+            "name": "pharmacy",
+            "category": "shop",
+            "score": 0.7643710374832153
+        }
+    ],
+    "11453": [
+        {
+            "name": "10 Below Ice Cream",
+            "category": "shop",
+            "score": 0.9840710163116455
+        }
+    ],
+    "12866": [
+        {
+            "name": "Nice Guy's",
+            "category": "shop",
+            "score": 0.8729342818260193
+        }
+    ],
+    "4801": [
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.5774966478347778
+        }
+    ],
+    "4130": [
+        {
+            "name": "Sushiden",
+            "category": "shop",
+            "score": 0.8777505159378052
+        },
+        {
+            "name": "Roast Chicken",
+            "category": "shop",
+            "score": 0.8958684206008911
+        },
+        {
+            "name": "subway entrances",
+            "category": "transportation",
+            "score": 0.7908797264099121
+        },
+        {
+            "name": "TGI Fridays",
+            "category": "shop",
+            "score": 0.8053200244903564
+        }
+    ],
+    "10474": [
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.6977555155754089
+        },
+        {
+            "name": "parking area",
+            "category": "amenity",
+            "score": 0.8405988812446594
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.7215662002563477
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.7002211809158325
+        },
+        {
+            "name": "NY Sports Club",
+            "category": "shop",
+            "score": 0.8789738416671753
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.752997636795044
+        },
+        {
+            "name": "Starbucks",
+            "category": "shop",
+            "score": 0.9498962759971619
+        }
+    ],
+    "1994": [
+        {
+            "name": "Big Daddy's",
+            "category": "shop",
+            "score": 0.9151260256767273
+        },
+        {
+            "name": "Big Daddy's",
+            "category": "shop",
+            "score": 0.969701886177063
+        },
+        {
+            "name": "Fraiche Maxx",
+            "category": "shop",
+            "score": 0.9379064440727234
+        }
+    ],
+    "11609": [
+        {
+            "name": "Lego store",
+            "category": "shop",
+            "score": 0.9535282850265503
+        },
+        {
+            "name": "park",
+            "category": "amenity",
+            "score": 0.644751250743866
+        },
+        {
+            "name": "Charles Schwab",
+            "category": "shop",
+            "score": 0.5665464401245117
+        },
+        {
+            "name": "Eleven Madison Park",
+            "category": "shop",
+            "score": 0.7067666053771973
+        }
+    ],
+    "6455": [
+        {
+            "name": "Restoration Hardware",
+            "category": "shop",
+            "score": 0.9887745380401611
+        },
+        {
+            "name": "subway entrances",
+            "category": "transportation",
+            "score": 0.8364132046699524
+        },
+        {
+            "name": "Ethan Allen",
+            "category": "shop",
+            "score": 0.9820373058319092
+        }
+    ],
+    "4816": [
+        {
+            "name": "Great NY Noodletown",
+            "category": "shop",
+            "score": 0.973831295967102
+        }
+    ],
+    "4049": [
+        {
+            "name": "Li-Lac Chocolates",
+            "category": "shop",
+            "score": 0.995179295539856
+        }
+    ],
+    "2897": [
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.5132026076316833
+        },
+        {
+            "name": "intersection",
+            "category": "transportation",
+            "score": 0.9358013868331909
+        },
+        {
+            "name": "intersection",
+            "category": "transportation",
+            "score": 0.8742080926895142
+        },
+        {
+            "name": "intersection",
+            "category": "transportation",
+            "score": 0.9393025636672974
+        },
+        {
+            "name": "intersection",
+            "category": "transportation",
+            "score": 0.9311648607254028
+        },
+        {
+            "name": "Hideaway Seaport",
+            "category": "tourism",
+            "score": 0.9615349769592285
+        }
+    ],
+    "2223": [
+        {
+            "name": "traffic lights",
+            "category": "transportation",
+            "score": 0.6490762233734131
+        },
+        {
+            "name": "glasses store",
+            "category": "shop",
+            "score": 0.9774665236473083
+        },
+        {
+            "name": "12 Corners cafe",
+            "category": "leisure",
+            "score": 0.8853667378425598
+        }
+    ],
+    "4755": [
+        {
+            "name": "next set of double lights",
+            "category": "transportation",
+            "score": 0.5456468462944031
+        },
+        {
+            "name": "next set of lights",
+            "category": "transportation",
+            "score": 0.6334810256958008
+        }
+    ],
+    "11844": [
+        {
+            "name": "Quality Inn",
+            "category": "tourism",
+            "score": 0.8334549069404602
+        }
+    ],
+    "3764": [
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.5124938488006592
+        },
+        {
+            "name": "intersection",
+            "category": "transportation",
+            "score": 0.5022885799407959
+        },
+        {
+            "name": "parking lot or garage",
+            "category": "amenity",
+            "score": 0.7756332755088806
+        }
+    ],
+    "3769": [
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.5894783735275269
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.600810706615448
+        },
+        {
+            "name": "Trestle on Tenth",
+            "category": "transportation",
+            "score": 0.6544659733772278
+        }
+    ],
+    "3070": [
+        {
+            "name": "GNC Live Well store",
+            "category": "shop",
+            "score": 0.9171998500823975
+        },
+        {
+            "name": "Starbucks",
+            "category": "shop",
+            "score": 0.9450907111167908
+        }
+    ],
+    "11070": [
+        {
+            "name": "Morton Williams Supermarket",
+            "category": "shop",
+            "score": 0.9768694043159485
+        }
+    ],
+    "5698": [
+        {
+            "name": "Food Emporium",
+            "category": "shop",
+            "score": 0.9930726885795593
+        }
+    ],
+    "12176": [],
+    "4077": [
+        {
+            "name": "first light",
+            "category": "transportation",
+            "score": 0.5875244140625
+        }
+    ],
+    "5953": [
+        {
+            "name": "Dudleys",
+            "category": "shop",
+            "score": 0.8654963374137878
+        },
+        {
+            "name": "Lower East Side Tenement Museum",
+            "category": "tourism",
+            "score": 0.8775546550750732
+        },
+        {
+            "name": "Melt",
+            "category": "shop",
+            "score": 0.9373555779457092
+        },
+        {
+            "name": "Jadis",
+            "category": "shop",
+            "score": 0.906025767326355
+        }
+    ],
+    "4788": [
+        {
+            "name": "Wrapido",
+            "category": "shop",
+            "score": 0.9559570550918579
+        },
+        {
+            "name": "Maruko Sushi & Tea",
+            "category": "shop",
+            "score": 0.738613486289978
+        }
+    ],
+    "12201": [
+        {
+            "name": "bus stop",
+            "category": "transportation",
+            "score": 0.9208190441131592
+        },
+        {
+            "name": "UN building for Namibia",
+            "category": "tourism",
+            "score": 0.5128549337387085
+        },
+        {
+            "name": "Sniffen Court Historic District",
+            "category": "tourism",
+            "score": 0.8818683624267578
+        },
+        {
+            "name": "courtyard",
+            "category": "amenity",
+            "score": 0.6758886575698853
+        }
+    ],
+    "6165": [
+        {
+            "name": "playground",
+            "category": "leisure",
+            "score": 0.9691707491874695
+        },
+        {
+            "name": "bus stop",
+            "category": "transportation",
+            "score": 0.9612064361572266
+        },
+        {
+            "name": "Chase",
+            "category": "shop",
+            "score": 0.9927474856376648
+        }
+    ],
+    "11197": [
+        {
+            "name": "Waverly Inn",
+            "category": "shop",
+            "score": 0.7899895906448364
+        },
+        {
+            "name": "Starbucks",
+            "category": "shop",
+            "score": 0.9569888114929199
+        },
+        {
+            "name": "Roasting Plant",
+            "category": "shop",
+            "score": 0.9534549117088318
+        },
+        {
+            "name": "park",
+            "category": "amenity",
+            "score": 0.7638517022132874
+        },
+        {
+            "name": "Duane Reade",
+            "category": "shop",
+            "score": 0.9759827852249146
+        },
+        {
+            "name": "Subway",
+            "category": "shop",
+            "score": 0.9591473937034607
+        }
+    ],
+    "6479": [
+        {
+            "name": "Gramercy Cafe",
+            "category": "shop",
+            "score": 0.928342342376709
+        },
+        {
+            "name": "Anisette Cafe Bistro",
+            "category": "shop",
+            "score": 0.8751078844070435
+        },
+        {
+            "name": "Sushi Choshi",
+            "category": "shop",
+            "score": 0.7611256241798401
+        }
+    ],
+    "3782": [
+        {
+            "name": "intersection",
+            "category": "transportation",
+            "score": 0.5900487899780273
+        },
+        {
+            "name": "intersection",
+            "category": "transportation",
+            "score": 0.7217458486557007
+        },
+        {
+            "name": "Starbucks",
+            "category": "shop",
+            "score": 0.9894844889640808
+        }
+    ],
+    "5647": [
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.7362988591194153
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.7121337652206421
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.7989305853843689
+        }
+    ],
+    "3450": [
+        {
+            "name": "Le Coucou",
+            "category": "shop",
+            "score": 0.9262877106666565
+        },
+        {
+            "name": "Starbucks",
+            "category": "shop",
+            "score": 0.9671423435211182
+        },
+        {
+            "name": "HSBC",
+            "category": "shop",
+            "score": 0.9373008012771606
+        }
+    ],
+    "2715": [
+        {
+            "name": "Shake Shack",
+            "category": "shop",
+            "score": 0.9686678051948547
+        },
+        {
+            "name": "Roxy Diner",
+            "category": "shop",
+            "score": 0.9415555000305176
+        },
+        {
+            "name": "Parking lot",
+            "category": "amenity",
+            "score": 0.5807836651802063
+        }
+    ],
+    "3074": [
+        {
+            "name": "Cowgirl Seahorse",
+            "category": "shop",
+            "score": 0.9465925097465515
+        }
+    ],
+    "11574": [],
+    "10556": [
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.5330051779747009
+        },
+        {
+            "name": "Dudleys",
+            "category": "shop",
+            "score": 0.9613922834396362
+        },
+        {
+            "name": "Irving Farm",
+            "category": "shop",
+            "score": 0.9380437135696411
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.6677870750427246
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.647289514541626
+        },
+        {
+            "name": "Lower East Museum",
+            "category": "tourism",
+            "score": 0.717680811882019
+        }
+    ],
+    "4517": [
+        {
+            "name": "next light",
+            "category": "transportation",
+            "score": 0.6419767141342163
+        },
+        {
+            "name": "next light",
+            "category": "transportation",
+            "score": 0.7089916467666626
+        },
+        {
+            "name": "park",
+            "category": "leisure",
+            "score": 0.6483384370803833
+        }
+    ],
+    "7018": [
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.5614325404167175
+        },
+        {
+            "name": "small garden",
+            "category": "amenity",
+            "score": 0.8159322142601013
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.6819705963134766
+        },
+        {
+            "name": "quick light",
+            "category": "transportation",
+            "score": 0.7548666596412659
+        },
+        {
+            "name": "road",
+            "category": "transportation",
+            "score": 0.562498927116394
+        }
+    ],
+    "4117": [
+        {
+            "name": "Duane Reade",
+            "category": "shop",
+            "score": 0.9544116854667664
+        },
+        {
+            "name": "Au Bon Pain",
+            "category": "shop",
+            "score": 0.9484317898750305
+        },
+        {
+            "name": "Citibank",
+            "category": "shop",
+            "score": 0.8816799521446228
+        }
+    ],
+    "11046": [
+        {
+            "name": "bike rental",
+            "category": "shop",
+            "score": 0.6633309721946716
+        },
+        {
+            "name": "park",
+            "category": "amenity",
+            "score": 0.7100110054016113
+        },
+        {
+            "name": "playground",
+            "category": "leisure",
+            "score": 0.7705556750297546
+        }
+    ],
+    "10065": [
+        {
+            "name": "AKA Times Square hotel",
+            "category": "tourism",
+            "score": 0.8087825179100037
+        }
+    ],
+    "12751": [
+        {
+            "name": "road",
+            "category": "transportation",
+            "score": 0.5149580836296082
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.5448418855667114
+        },
+        {
+            "name": "light",
+            "category": "transportation",
+            "score": 0.5488697290420532
+        },
+        {
+            "name": "Cupcake Cafe",
+            "category": "shop",
+            "score": 0.991859495639801
+        }
+    ],
+    "11868": [
+        {
+            "name": "Domino's",
+            "category": "shop",
+            "score": 0.5420619249343872
+        },
+        {
+            "name": "Pizza 33",
+            "category": "shop",
+            "score": 0.938733696937561
+        },
+        {
+            "name": "wax center",
+            "category": "shop",
+            "score": 0.7853798866271973
+        }
+    ],
+    "4224": [
+        {
+            "name": "Capital One",
+            "category": "shop",
+            "score": 0.5260682106018066
+        },
+        {
+            "name": "Delis 48",
+            "category": "shop",
+            "score": 0.9819154739379883
+        }
+    ],
+    "4606": [
+        {
+            "name": "first light",
+            "category": "transportation",
+            "score": 0.5886469483375549
+        },
+        {
+            "name": "second light",
+            "category": "transportation",
+            "score": 0.5093429088592529
+        },
+        {
+            "name": "Duane Reade",
+            "category": "shop",
+            "score": 0.9897946715354919
+        }
+    ],
+    "3171": [
+        {
+            "name": "road",
+            "category": "transportation",
+            "score": 0.5072786808013916
+        },
+        {
+            "name": "grocery store",
+            "category": "shop",
+            "score": 0.8574138879776001
+        },
+        {
+            "name": "bike rental",
+            "category": "tourism",
+            "score": 0.8509398698806763
+        },
+        {
+            "name": "pizza place",
+            "category": "cuisine",
+            "score": 0.809776246547699
+        },
+        {
+            "name": "Deli",
+            "category": "shop",
+            "score": 0.8616554737091064
+        }
+    ],
+    "4688": [
+        {
+            "name": "Chase",
+            "category": "shop",
+            "score": 0.8962187767028809
+        },
+        {
+            "name": "bike rental",
+            "category": "shop",
+            "score": 0.7936720252037048
+        }
+    ],
+    "3578": [
+        {
+            "name": "first light",
+            "category": "transportation",
+            "score": 0.5354751944541931
+        },
+        {
+            "name": "small triangular park",
+            "category": "amenity",
+            "score": 0.554021418094635
+        }
+    ],
+    "2784": [
+        {
+            "name": "Chipotle",
+            "category": "cuisine",
+            "score": 0.9655506014823914
+        },
+        {
+            "name": "Museum of Sex",
+            "category": "tourism",
+            "score": 0.9389348030090332
+        }
+    ],
+    "2350": [
+        {
+            "name": "Inakaya",
+            "category": "shop",
+            "score": 0.9679438471794128
+        }
+    ],
+    "11074": [
+        {
+            "name": "GNC",
+            "category": "shop",
+            "score": 0.9055443406105042
+        },
+        {
+            "name": "Pizza 33",
+            "category": "shop",
+            "score": 0.9028608202934265
+        },
+        {
+            "name": "Prestige Car Rental",
+            "category": "shop",
+            "score": 0.6734729409217834
+        },
+        {
+            "name": "La Tarte",
+            "category": "shop",
+            "score": 0.917320728302002
+        }
+    ],
+    "7182": [
+        {
+            "name": "small park",
+            "category": "amenity",
+            "score": 0.8115997910499573
+        },
+        {
+            "name": "A-1 Pizza",
+            "category": "shop",
+            "score": 0.9917994737625122
+        }
+    ],
+    "10697": [
+        {
+            "name": "park",
+            "category": "amenity",
+            "score": 0.9093800187110901
+        },
+        {
+            "name": "park",
+            "category": "amenity",
+            "score": 0.9215476512908936
+        },
+        {
+            "name": "park",
+            "category": "amenity",
+            "score": 0.9393782019615173
+        },
+        {
+            "name": "Starbucks",
+            "category": "shop",
+            "score": 0.9359772205352783
+        },
+        {
+            "name": "Flatiron Hotel",
+            "category": "tourism",
+            "score": 0.8592723608016968
+        },
+        {
+            "name": "Rizzoli",
+            "category": "shop",
+            "score": 0.9069390892982483
+        },
+        {
+            "name": "Num Pang",
+            "category": "shop",
+            "score": 0.8337690830230713
+        }
+    ],
+    "6448": [
+        {
+            "name": "street",
+            "category": "transportation",
+            "score": 0.5021307468414307
+        },
+        {
+            "name": "street",
+            "category": "transportation",
+            "score": 0.618402361869812
+        },
+        {
+            "name": "Starbucks",
+            "category": "shop",
+            "score": 0.872009813785553
+        },
+        {
+            "name": "Counter",
+            "category": "shop",
+            "score": 0.7330359816551208
+        },
+        {
+            "name": "bike rental",
+            "category": "tourism",
+            "score": 0.6352217793464661
+        }
+    ],
+    "4301": [
+        {
+            "name": "road",
+            "category": "transportation",
+            "score": 0.8677733540534973
+        },
+        {
+            "name": "traffic light",
+            "category": "transportation",
+            "score": 0.7644022703170776
+        },
+        {
+            "name": "square",
+            "category": "amenity",
+            "score": 0.6001755595207214
+        },
+        {
+            "name": "park",
+            "category": "amenity",
+            "score": 0.6269730925559998
+        },
+        {
+            "name": "road",
+            "category": "transportation",
+            "score": 0.8574048280715942
+        },
+        {
+            "name": "square",
+            "category": "amenity",
+            "score": 0.5803974270820618
+        }
+    ],
+    "3961": [
+        {
+            "name": "traffic light",
+            "category": "transportation",
+            "score": 0.8670679926872253
+        },
+        {
+            "name": "CVS",
+            "category": "shop",
+            "score": 0.9771803617477417
+        }
+    ],
+    "7331": [
+        {
+            "name": "Duane Reade",
+            "category": "shop",
+            "score": 0.9803251624107361
+        },
+        {
+            "name": "bike rental",
+            "category": "shop",
+            "score": 0.6011800169944763
+        }
+    ],
+    "2553": [
+        {
+            "name": "street",
+            "category": "transportation",
+            "score": 0.7572420835494995
+        },
+        {
+            "name": "Whynot",
+            "category": "shop",
+            "score": 0.7188485860824585
+        }
+    ]
+}

@@ -1,0 +1,1206 @@
+{
+    "11793": [
+        {
+            "name": "TD Bank",
+            "category": "Organization",
+            "score": 0.9965141415596008
+        },
+        {
+            "name": "Roasting Plant",
+            "category": "Organization",
+            "score": 0.9534718170762062
+        },
+        {
+            "name": "Mooshoes",
+            "category": "Organization",
+            "score": 0.8600574433803558
+        },
+        {
+            "name": "An Choi",
+            "category": "Organization",
+            "score": 0.6620595455169678
+        },
+        {
+            "name": "Sticky Rice",
+            "category": "Organization",
+            "score": 0.9351000934839249
+        }
+    ],
+    "10347": [
+        {
+            "name": "TD Bank",
+            "category": "Organization",
+            "score": 0.9990471601486206
+        },
+        {
+            "name": "Citibank",
+            "category": "Organization",
+            "score": 0.9989774376153946
+        },
+        {
+            "name": "Hong Kong Supermarket",
+            "category": "Organization",
+            "score": 0.9825086295604706
+        }
+    ],
+    "2478": [
+        {
+            "name": "Marmara",
+            "category": "Location",
+            "score": 0.9794140756130219
+        }
+    ],
+    "3538": [
+        {
+            "name": "Duanee",
+            "category": "Location",
+            "score": 0.6539987623691559
+        },
+        {
+            "name": "Rite Aid",
+            "category": "Organization",
+            "score": 0.7889260053634644
+        },
+        {
+            "name": "Social",
+            "category": "Organization",
+            "score": 0.592117190361023
+        }
+    ],
+    "12839": [
+        {
+            "name": "Muer",
+            "category": "Location",
+            "score": 0.5074371695518494
+        },
+        {
+            "name": "Brother Jimmy",
+            "category": "Organization",
+            "score": 0.5480588674545288
+        },
+        {
+            "name": "Old Print",
+            "category": "Organization",
+            "score": 0.7038241326808929
+        }
+    ],
+    "6220": [
+        {
+            "name": "Chipotle",
+            "category": "Organization",
+            "score": 0.8821836858987808
+        },
+        {
+            "name": "Cafe",
+            "category": "Organization",
+            "score": 0.4746103584766388
+        }
+    ],
+    "10426": [
+        {
+            "name": "7 Eleven",
+            "category": "MISC",
+            "score": 0.6348016858100891
+        }
+    ],
+    "2248": [
+        {
+            "name": "Pure Thai Cookhouse",
+            "category": "Organization",
+            "score": 0.796405054628849
+        },
+        {
+            "name": "Island Burger Shakes",
+            "category": "Organization",
+            "score": 0.6294512078166008
+        }
+    ],
+    "5086": [
+        {
+            "name": "Capital One",
+            "category": "Organization",
+            "score": 0.9169104993343353
+        },
+        {
+            "name": "Pottery Barn",
+            "category": "Organization",
+            "score": 0.7284400910139084
+        },
+        {
+            "name": "Loehmann ' s",
+            "category": "Organization",
+            "score": 0.6678261011838913
+        }
+    ],
+    "12181": [
+        {
+            "name": "Simply Hooked",
+            "category": "Organization",
+            "score": 0.9773943461477757
+        },
+        {
+            "name": "Nulous Gaming",
+            "category": "Organization",
+            "score": 0.9944957345724106
+        }
+    ],
+    "2304": [
+        {
+            "name": "Restaurant",
+            "category": "Organization",
+            "score": 0.2735542058944702
+        }
+    ],
+    "1512": [
+        {
+            "name": "Southern Hospitality",
+            "category": "Organization",
+            "score": 0.9586896151304245
+        }
+    ],
+    "5564": [
+        {
+            "name": "The Meatball Shop",
+            "category": "Organization",
+            "score": 0.7869694456458092
+        },
+        {
+            "name": "Stanton Socials",
+            "category": "Organization",
+            "score": 0.649709939956665
+        }
+    ],
+    "6625": [
+        {
+            "name": "Hard Rock",
+            "category": "Organization",
+            "score": 0.5900609195232391
+        },
+        {
+            "name": "Chase",
+            "category": "Person",
+            "score": 0.9258328676223755
+        },
+        {
+            "name": "Ruby Tuesday",
+            "category": "Person",
+            "score": 0.8501526117324829
+        },
+        {
+            "name": "Was",
+            "category": "Organization",
+            "score": 0.7904508113861084
+        },
+        {
+            "name": "##abi",
+            "category": "Organization",
+            "score": 0.3441174328327179
+        }
+    ],
+    "12741": [
+        {
+            "name": "Best Buy",
+            "category": "Organization",
+            "score": 0.9881671369075775
+        },
+        {
+            "name": "Starbucks",
+            "category": "Organization",
+            "score": 0.9904149770736694
+        },
+        {
+            "name": "Duane Reade",
+            "category": "Person",
+            "score": 0.9435656368732452
+        },
+        {
+            "name": "Mad 46",
+            "category": "Person",
+            "score": 0.8472636938095093
+        },
+        {
+            "name": "Charles Tyrwhitt",
+            "category": "Person",
+            "score": 0.8933817315846682
+        }
+    ],
+    "1993": [
+        {
+            "name": "Big",
+            "category": "MISC",
+            "score": 0.5596352815628052
+        }
+    ],
+    "5285": [
+        {
+            "name": "Casao",
+            "category": "Location",
+            "score": 0.5168840289115906
+        },
+        {
+            "name": "TGI Fridays",
+            "category": "MISC",
+            "score": 0.9317163750529289
+        }
+    ],
+    "11263": [
+        {
+            "name": "BP",
+            "category": "Organization",
+            "score": 0.9991245865821838
+        },
+        {
+            "name": "Enoch ' s Bike",
+            "category": "Organization",
+            "score": 0.570584986358881
+        }
+    ],
+    "2627": [
+        {
+            "name": "Santander",
+            "category": "Organization",
+            "score": 0.9966922700405121
+        },
+        {
+            "name": "Herald Square",
+            "category": "Location",
+            "score": 0.9761257469654083
+        }
+    ],
+    "11247": [
+        {
+            "name": "Subway",
+            "category": "Organization",
+            "score": 0.9970020651817322
+        },
+        {
+            "name": "Bank of America",
+            "category": "Organization",
+            "score": 0.9990100115537643
+        },
+        {
+            "name": "Zara",
+            "category": "Organization",
+            "score": 0.9889776110649109
+        },
+        {
+            "name": "Don",
+            "category": "Person",
+            "score": 0.6437886953353882
+        }
+    ],
+    "4240": [
+        {
+            "name": "GEM",
+            "category": "Organization",
+            "score": 0.692121684551239
+        },
+        {
+            "name": "Chelsea Florist",
+            "category": "Organization",
+            "score": 0.6474725902080536
+        },
+        {
+            "name": "Vibe",
+            "category": "Organization",
+            "score": 0.8280267119407654
+        },
+        {
+            "name": "Walgreens",
+            "category": "Organization",
+            "score": 0.8073214069008827
+        }
+    ],
+    "12783": [
+        {
+            "name": "Charles Scb",
+            "category": "Person",
+            "score": 0.9044309258460999
+        },
+        {
+            "name": "New York Edition",
+            "category": "MISC",
+            "score": 0.9742723256349564
+        }
+    ],
+    "9974": [],
+    "4291": [
+        {
+            "name": "Eisenberg Sandwich",
+            "category": "Organization",
+            "score": 0.7385280877351761
+        },
+        {
+            "name": "Sagaponack",
+            "category": "Organization",
+            "score": 0.6083719283342361
+        }
+    ],
+    "2329": [
+        {
+            "name": "Columbus Park",
+            "category": "Location",
+            "score": 0.9722976982593536
+        },
+        {
+            "name": "10 Below",
+            "category": "Organization",
+            "score": 0.4813021421432495
+        }
+    ],
+    "11604": [
+        {
+            "name": "Subway",
+            "category": "Person",
+            "score": 0.849745512008667
+        },
+        {
+            "name": "Jensen - Lewis",
+            "category": "Person",
+            "score": 0.9103722870349884
+        }
+    ],
+    "7364": [
+        {
+            "name": "Bank of America",
+            "category": "Organization",
+            "score": 0.9752171635627747
+        },
+        {
+            "name": "Boiler Bar",
+            "category": "Organization",
+            "score": 0.7643041014671326
+        },
+        {
+            "name": "Manhattan School for Career Development",
+            "category": "Organization",
+            "score": 0.7812502272427082
+        },
+        {
+            "name": "La",
+            "category": "Organization",
+            "score": 0.5496070384979248
+        }
+    ],
+    "11790": [
+        {
+            "name": "Chase",
+            "category": "Organization",
+            "score": 0.7406564354896545
+        },
+        {
+            "name": "CVS",
+            "category": "Organization",
+            "score": 0.9929913878440857
+        },
+        {
+            "name": "Duane Reade",
+            "category": "Organization",
+            "score": 0.6315735280513763
+        },
+        {
+            "name": "Gabay ' s",
+            "category": "Organization",
+            "score": 0.7045899797230959
+        },
+        {
+            "name": "Subway",
+            "category": "Organization",
+            "score": 0.9768500328063965
+        }
+    ],
+    "6876": [
+        {
+            "name": "Fresh & Co",
+            "category": "Organization",
+            "score": 0.9972139298915863
+        },
+        {
+            "name": "Pre A Manger",
+            "category": "Organization",
+            "score": 0.5023350529372692
+        },
+        {
+            "name": "Doctors without Borders",
+            "category": "Organization",
+            "score": 0.9966041594743729
+        }
+    ],
+    "4830": [
+        {
+            "name": "Nub",
+            "category": "Person",
+            "score": 0.3987640142440796
+        }
+    ],
+    "11476": [],
+    "3201": [
+        {
+            "name": "Rustic",
+            "category": "MISC",
+            "score": 0.8032560050487518
+        }
+    ],
+    "5439": [
+        {
+            "name": "GNC Live Well",
+            "category": "Organization",
+            "score": 0.9959564134478569
+        },
+        {
+            "name": "New",
+            "category": "Organization",
+            "score": 0.7696084380149841
+        },
+        {
+            "name": "Murray Hill Market",
+            "category": "Location",
+            "score": 0.9910394996404648
+        }
+    ],
+    "1624": [
+        {
+            "name": "Greenwich Lane",
+            "category": "Location",
+            "score": 0.9881891012191772
+        },
+        {
+            "name": "St Vincent ' s Triangle Park",
+            "category": "Location",
+            "score": 0.9945294987410307
+        },
+        {
+            "name": "E",
+            "category": "Location",
+            "score": 0.5774587988853455
+        }
+    ],
+    "4742": [],
+    "10773": [
+        {
+            "name": "Pizza",
+            "category": "Organization",
+            "score": 0.884687066078186
+        },
+        {
+            "name": "McDonald ' s",
+            "category": "Organization",
+            "score": 0.9482007920742035
+        },
+        {
+            "name": "7 - Eleven",
+            "category": "Organization",
+            "score": 0.9791446626186371
+        },
+        {
+            "name": "Moonstck",
+            "category": "Organization",
+            "score": 0.6888115257024765
+        },
+        {
+            "name": "Dough Boys",
+            "category": "Organization",
+            "score": 0.9486666172742844
+        },
+        {
+            "name": "BrotherB",
+            "category": "MISC",
+            "score": 0.5750237107276917
+        }
+    ],
+    "2653": [
+        {
+            "name": "Theodore Birthplace",
+            "category": "MISC",
+            "score": 0.5355948060750961
+        }
+    ],
+    "10789": [
+        {
+            "name": "Enoch",
+            "category": "Person",
+            "score": 0.7445372641086578
+        }
+    ],
+    "6415": [
+        {
+            "name": "Skyline Hotel",
+            "category": "Location",
+            "score": 0.7533513605594635
+        },
+        {
+            "name": "As NYC",
+            "category": "Location",
+            "score": 0.6563699245452881
+        }
+    ],
+    "3432": [
+        {
+            "name": "Barlovento",
+            "category": "Location",
+            "score": 0.9302467703819275
+        },
+        {
+            "name": "Sunflower Diner",
+            "category": "Location",
+            "score": 0.7212891802191734
+        }
+    ],
+    "5261": [
+        {
+            "name": "Citibank",
+            "category": "Organization",
+            "score": 0.9969668090343475
+        },
+        {
+            "name": "Starbucks",
+            "category": "Organization",
+            "score": 0.9914357662200928
+        },
+        {
+            "name": "Roast Chicken",
+            "category": "Organization",
+            "score": 0.964639812707901
+        }
+    ],
+    "5002": [
+        {
+            "name": "Herald Square",
+            "category": "Location",
+            "score": 0.9966214299201965
+        },
+        {
+            "name": "Hampton Inn",
+            "category": "Location",
+            "score": 0.9834004044532776
+        },
+        {
+            "name": "Hilton Garden Inn",
+            "category": "Location",
+            "score": 0.9803954064846039
+        }
+    ],
+    "6199": [
+        {
+            "name": "Buy Rite Pharmacy",
+            "category": "Organization",
+            "score": 0.9924972057342529
+        }
+    ],
+    "10660": [
+        {
+            "name": "Starbucks",
+            "category": "Organization",
+            "score": 0.9694006145000458
+        },
+        {
+            "name": "Chase",
+            "category": "Organization",
+            "score": 0.9258397221565247
+        },
+        {
+            "name": "Glasnost Precious Metals",
+            "category": "Organization",
+            "score": 0.993708788882941
+        }
+    ],
+    "11453": [
+        {
+            "name": "10 Below Ice Cream",
+            "category": "Location",
+            "score": 0.8701891377568245
+        }
+    ],
+    "12866": [
+        {
+            "name": "Nice Guy",
+            "category": "MISC",
+            "score": 0.4715999364852905
+        }
+    ],
+    "4801": [
+        {
+            "name": "CUNY",
+            "category": "Organization",
+            "score": 0.9868029654026031
+        },
+        {
+            "name": "Capital One Bank",
+            "category": "Organization",
+            "score": 0.9908369779586792
+        }
+    ],
+    "4130": [
+        {
+            "name": "Sushiden",
+            "category": "MISC",
+            "score": 0.9430137276649475
+        },
+        {
+            "name": "Roast Chicken",
+            "category": "MISC",
+            "score": 0.6841980069875717
+        },
+        {
+            "name": "TGI Fridays",
+            "category": "MISC",
+            "score": 0.9232573062181473
+        }
+    ],
+    "10474": [
+        {
+            "name": "NY Sports Club",
+            "category": "Organization",
+            "score": 0.9918222874403
+        },
+        {
+            "name": "Starbucks",
+            "category": "Organization",
+            "score": 0.9015029519796371
+        }
+    ],
+    "1994": [
+        {
+            "name": "Big Daddy ' s",
+            "category": "Organization",
+            "score": 0.9718587771058083
+        },
+        {
+            "name": "Big Daddy ' s",
+            "category": "Organization",
+            "score": 0.9721867144107819
+        },
+        {
+            "name": "Fraiche Maxx",
+            "category": "Organization",
+            "score": 0.9578001536428928
+        }
+    ],
+    "11609": [
+        {
+            "name": "Lego",
+            "category": "Organization",
+            "score": 0.8872701227664948
+        },
+        {
+            "name": "Charles Sc",
+            "category": "Person",
+            "score": 0.5459460020065308
+        },
+        {
+            "name": "Eleven Madison Park",
+            "category": "Location",
+            "score": 0.9189364910125732
+        }
+    ],
+    "6455": [
+        {
+            "name": "Restoration Hardware",
+            "category": "Organization",
+            "score": 0.9962099939584732
+        },
+        {
+            "name": "Ethan Allen",
+            "category": "Person",
+            "score": 0.9984348118305206
+        }
+    ],
+    "4816": [
+        {
+            "name": "Chase",
+            "category": "Organization",
+            "score": 0.7792333960533142
+        },
+        {
+            "name": "HSBC",
+            "category": "Organization",
+            "score": 0.9900887906551361
+        },
+        {
+            "name": "Great NY No",
+            "category": "Location",
+            "score": 0.8062714338302612
+        }
+    ],
+    "4049": [
+        {
+            "name": "Li - Lac Chocolates",
+            "category": "Organization",
+            "score": 0.9899716712534428
+        }
+    ],
+    "2897": [
+        {
+            "name": "Hideaway Seaport",
+            "category": "Location",
+            "score": 0.9884547181427479
+        }
+    ],
+    "2223": [
+        {
+            "name": "12 Corners",
+            "category": "Organization",
+            "score": 0.7560144066810608
+        }
+    ],
+    "4755": [],
+    "11844": [
+        {
+            "name": "BP",
+            "category": "Organization",
+            "score": 0.9969218373298645
+        },
+        {
+            "name": "Quality Inn",
+            "category": "Location",
+            "score": 0.6266668438911438
+        }
+    ],
+    "3764": [],
+    "3769": [],
+    "3070": [
+        {
+            "name": "GNC Live Well",
+            "category": "Organization",
+            "score": 0.9807657599449158
+        },
+        {
+            "name": "Starbucks",
+            "category": "Organization",
+            "score": 0.9198522418737411
+        }
+    ],
+    "11070": [
+        {
+            "name": "Calvary Church",
+            "category": "Location",
+            "score": 0.9408375024795532
+        },
+        {
+            "name": "Morton Williams Super",
+            "category": "Organization",
+            "score": 0.8857489228248596
+        }
+    ],
+    "5698": [
+        {
+            "name": "Food Emporium",
+            "category": "Organization",
+            "score": 0.6943921744823456
+        }
+    ],
+    "12176": [
+        {
+            "name": "McDonald ' s",
+            "category": "Organization",
+            "score": 0.8553148955106735
+        },
+        {
+            "name": "Wells Fargo",
+            "category": "Organization",
+            "score": 0.9275305569171906
+        },
+        {
+            "name": "Renwick",
+            "category": "Location",
+            "score": 0.8947702348232269
+        }
+    ],
+    "4077": [],
+    "5953": [
+        {
+            "name": "Irving",
+            "category": "Organization",
+            "score": 0.6246698498725891
+        },
+        {
+            "name": "Dudley",
+            "category": "Organization",
+            "score": 0.5696243643760681
+        },
+        {
+            "name": "Lower East Side Tenement Museum",
+            "category": "Location",
+            "score": 0.8052025679498911
+        },
+        {
+            "name": "Melt",
+            "category": "Organization",
+            "score": 0.6108324825763702
+        },
+        {
+            "name": "Jadis",
+            "category": "Organization",
+            "score": 0.7868820279836655
+        }
+    ],
+    "4788": [
+        {
+            "name": "Wrapido",
+            "category": "Organization",
+            "score": 0.6295944899320602
+        },
+        {
+            "name": "Maruko Sushi & Tea",
+            "category": "Organization",
+            "score": 0.9424509918317199
+        }
+    ],
+    "12201": [
+        {
+            "name": "UN",
+            "category": "Organization",
+            "score": 0.9990584254264832
+        },
+        {
+            "name": "Namibia",
+            "category": "Location",
+            "score": 0.9992425441741943
+        },
+        {
+            "name": "Sniffen Court Historic District",
+            "category": "Location",
+            "score": 0.8814955540001392
+        }
+    ],
+    "6165": [
+        {
+            "name": "Chase",
+            "category": "Person",
+            "score": 0.9910116195678711
+        }
+    ],
+    "11197": [
+        {
+            "name": "Waverly Inn",
+            "category": "Location",
+            "score": 0.7870835065841675
+        },
+        {
+            "name": "Starbucks",
+            "category": "Organization",
+            "score": 0.9704653471708298
+        },
+        {
+            "name": "Roasting Plant",
+            "category": "Organization",
+            "score": 0.9895069971680641
+        },
+        {
+            "name": "Duane Read",
+            "category": "Organization",
+            "score": 0.7543819397687912
+        },
+        {
+            "name": "Subway",
+            "category": "Organization",
+            "score": 0.9897423982620239
+        }
+    ],
+    "6479": [
+        {
+            "name": "Gramcy Cafe",
+            "category": "Organization",
+            "score": 0.8873606473207474
+        },
+        {
+            "name": "Anisette Cafe Bistro",
+            "category": "Organization",
+            "score": 0.8240680992603302
+        },
+        {
+            "name": "Sushi Choshi",
+            "category": "Organization",
+            "score": 0.9493810012936592
+        }
+    ],
+    "3782": [
+        {
+            "name": "Starbucks",
+            "category": "Organization",
+            "score": 0.9335601180791855
+        }
+    ],
+    "5647": [
+        {
+            "name": "NYU Dentistry",
+            "category": "Organization",
+            "score": 0.9968563839793205
+        }
+    ],
+    "3450": [
+        {
+            "name": "Le Coucou",
+            "category": "Organization",
+            "score": 0.9920810163021088
+        },
+        {
+            "name": "Starbucks",
+            "category": "Organization",
+            "score": 0.996544137597084
+        },
+        {
+            "name": "HSBC",
+            "category": "Organization",
+            "score": 0.9241887778043747
+        }
+    ],
+    "2715": [
+        {
+            "name": "Shake Shack",
+            "category": "Location",
+            "score": 0.67343769967556
+        },
+        {
+            "name": "Roxy Diner",
+            "category": "Location",
+            "score": 0.8730854392051697
+        },
+        {
+            "name": "Birdland Jazz Club",
+            "category": "Location",
+            "score": 0.9057845175266266
+        }
+    ],
+    "3074": [
+        {
+            "name": "Cowgirl Seahorse",
+            "category": "MISC",
+            "score": 0.9571968726813793
+        }
+    ],
+    "11574": [
+        {
+            "name": "TD Bank",
+            "category": "Organization",
+            "score": 0.9978067874908447
+        }
+    ],
+    "10556": [
+        {
+            "name": "Dudleys",
+            "category": "Location",
+            "score": 0.9071837365627289
+        },
+        {
+            "name": "Irving Farm",
+            "category": "Location",
+            "score": 0.914297878742218
+        },
+        {
+            "name": "Lower East Museum",
+            "category": "Location",
+            "score": 0.9775808751583099
+        }
+    ],
+    "4517": [
+        {
+            "name": "Maialino",
+            "category": "Location",
+            "score": 0.4051228314638138
+        }
+    ],
+    "7018": [
+        {
+            "name": "Yo",
+            "category": "Person",
+            "score": 0.7083594799041748
+        }
+    ],
+    "4117": [
+        {
+            "name": "Duane Read",
+            "category": "Person",
+            "score": 0.8636285066604614
+        },
+        {
+            "name": "Au Bon Pain",
+            "category": "Organization",
+            "score": 0.9718057811260223
+        },
+        {
+            "name": "Citibank",
+            "category": "Organization",
+            "score": 0.953880563378334
+        }
+    ],
+    "11046": [],
+    "10065": [
+        {
+            "name": "City National Bank",
+            "category": "Organization",
+            "score": 0.7196505069732666
+        },
+        {
+            "name": "AKA Times Square",
+            "category": "Location",
+            "score": 0.9092535749077797
+        },
+        {
+            "name": "Belasco Theatre",
+            "category": "Location",
+            "score": 0.9250143319368362
+        }
+    ],
+    "12751": [
+        {
+            "name": "Cupcake Cafe",
+            "category": "MISC",
+            "score": 0.5116947442293167
+        }
+    ],
+    "11868": [
+        {
+            "name": "Domino ' s",
+            "category": "Organization",
+            "score": 0.6154494732618332
+        },
+        {
+            "name": "Pizza 33",
+            "category": "Organization",
+            "score": 0.6682065725326538
+        }
+    ],
+    "4224": [
+        {
+            "name": "Capital",
+            "category": "Location",
+            "score": 0.31883862614631653
+        },
+        {
+            "name": "Del",
+            "category": "Organization",
+            "score": 0.3438718020915985
+        }
+    ],
+    "4606": [
+        {
+            "name": "Duanee",
+            "category": "MISC",
+            "score": 0.8249067664146423
+        }
+    ],
+    "3171": [],
+    "4688": [
+        {
+            "name": "Chase",
+            "category": "Person",
+            "score": 0.9933643341064453
+        }
+    ],
+    "3578": [],
+    "2784": [
+        {
+            "name": "Chipotle",
+            "category": "MISC",
+            "score": 0.8088457584381104
+        },
+        {
+            "name": "Museum Sex",
+            "category": "Organization",
+            "score": 0.38457098603248596
+        }
+    ],
+    "2350": [
+        {
+            "name": "CUNY of Journalism",
+            "category": "Organization",
+            "score": 0.7581374198198318
+        },
+        {
+            "name": "Inaka",
+            "category": "Organization",
+            "score": 0.5803884267807007
+        }
+    ],
+    "11074": [
+        {
+            "name": "GNC",
+            "category": "Organization",
+            "score": 0.9974684715270996
+        },
+        {
+            "name": "Pizza 33",
+            "category": "Organization",
+            "score": 0.8269472122192383
+        },
+        {
+            "name": "Prestige Car Rental",
+            "category": "Organization",
+            "score": 0.9949589855968952
+        },
+        {
+            "name": "La Tarte",
+            "category": "Organization",
+            "score": 0.9414562880992889
+        }
+    ],
+    "7182": [
+        {
+            "name": "A - 1 Pizza",
+            "category": "Organization",
+            "score": 0.986851692199707
+        }
+    ],
+    "10697": [
+        {
+            "name": "Starcks",
+            "category": "Location",
+            "score": 0.6293813586235046
+        },
+        {
+            "name": "Flatiron Hotel",
+            "category": "Location",
+            "score": 0.8568216934800148
+        },
+        {
+            "name": "Rli",
+            "category": "Location",
+            "score": 0.6204768866300583
+        },
+        {
+            "name": "Num Pang",
+            "category": "Location",
+            "score": 0.966764785349369
+        }
+    ],
+    "6448": [
+        {
+            "name": "Star",
+            "category": "MISC",
+            "score": 0.5660796761512756
+        }
+    ],
+    "4301": [],
+    "3961": [
+        {
+            "name": "CVS",
+            "category": "Organization",
+            "score": 0.962291806936264
+        }
+    ],
+    "7331": [
+        {
+            "name": "Duanee",
+            "category": "Organization",
+            "score": 0.8274877667427063
+        },
+        {
+            "name": "Jensen lewis",
+            "category": "Organization",
+            "score": 0.9120256528258324
+        }
+    ],
+    "2553": [
+        {
+            "name": "Joe",
+            "category": "Person",
+            "score": 0.9205638766288757
+        },
+        {
+            "name": "Why",
+            "category": "Person",
+            "score": 0.8661995530128479
+        }
+    ]
+}
