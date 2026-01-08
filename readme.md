@@ -1,148 +1,20 @@
-# OSM Agentic Navigation System Architecture
-## Comprehensive Description for Academic Figure Generation
+# GROKE: Vision-Free Navigation Instruction Evaluation via Graph Reasoning on OpenStreetMap
 
 ---
 
 ## 1. System Overview
 
-The system implements a **Multi-Agent Agentic Navigation Framework** for vision-and-language navigation on OpenStreetMap (OSM) graph data. It employs a hierarchical decomposition strategy where natural language instructions are first parsed into executable sub-goals, then iteratively executed through a navigation agent that reasons over multiple spatial representations.
+The system implements a **Multi-Agent Agentic Navigation Framework** for route navigability on OpenStreetMap (OSM) graph data.
 
----
-
-## 2. High-Level Architecture Components
-
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                        INPUT: Natural Language Instruction                   │
-│           "Go straight to the bank, then turn right at the cafe"            │
-└─────────────────────────────────────────────────────────────────────────────┘
-                                      │
-                                      ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                     STAGE 1: INSTRUCTION PARSING AGENT                       │
-│  ┌─────────────────────────────┐    ┌─────────────────────────────────────┐ │
-│  │   Sub-Goal Extraction       │    │     Landmark Detection              │ │
-│  │   • Decompose instruction   │    │     • Extract POI references        │ │
-│  │   • Sequential actions      │    │     • Categorize: amenity, traffic  │ │
-│  │   • MOVE_FORWARD, TURN_*    │    │     • Spatial relations (at, past)  │ │
-│  └─────────────────────────────┘    └─────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────────────────────┘
-                                      │
-                    ┌─────────────────┴─────────────────┐
-                    ▼                                   ▼
-        ┌───────────────────────┐           ┌───────────────────────┐
-        │     Sub-Goals List    │           │    Landmarks List     │
-        │  1. Go to the bank    │           │  A = "bank" (amenity) │
-        │  2. Turn right @ cafe │           │  B = "cafe" (amenity) │
-        └───────────────────────┘           └───────────────────────┘
-                                      │
-                                      ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                         STAGE 2: DATA PREPARATION                            │
-│  ┌────────────────────────────────────────────────────────────────────────┐ │
-│  │                        OSM Data Loading                                 │ │
-│  │   • nodes.txt → {node_id: (lat, lng)}                                  │ │
-│  │   • links.txt → [(source, heading, target)]                            │ │
-│  │   • pois.txt → {poi_id: (lat, lng, tags)}                              │ │
-│  │   • poi_links.txt → [(osm_node, poi_id)]                               │ │
-│  │   • Neighbor expansion: N-degree graph around ground-truth path        │ │
-│  └────────────────────────────────────────────────────────────────────────┘ │
-│                                                                              │
-│  ┌────────────────────────────────────────────────────────────────────────┐ │
-│  │                       Landmark Grounding                                │ │
-│  │   • Fuzzy matching (RapidFuzz partial_ratio > 70%)                     │ │
-│  │   • Map instruction landmarks → OSM POI nodes                          │ │
-│  │   • Assign unique identifiers: A, B, C, ... (excluding S, P)           │ │
-│  └────────────────────────────────────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────────────────────┘
-                                      │
-                                      ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                      STAGE 3: AGENTIC NAVIGATION LOOP                        │
-│                                                                              │
-│  ┌─────────────────────────────────────────────────────────────────────┐    │
-│  │  FOR each sub_goal in sub_goals:                                     │    │
-│  │                                                                       │    │
-│  │  ┌─────────────────────────────────────────────────────────────────┐ │    │
-│  │  │ 3.1 FETCH SURROUNDINGS                                          │ │    │
-│  │  │     navigate(current_node, heading, pois, poi_mapping)          │ │    │
-│  │  │     → Build path_data with:                                     │ │    │
-│  │  │       • Node connectivity (Forward/Left/Right)                  │ │    │
-│  │  │       • Intersection detection (degree > 2)                     │ │    │
-│  │  │       • POI proximity mapping (< 50m threshold)                 │ │    │
-│  │  └─────────────────────────────────────────────────────────────────┘ │    │
-│  │                               │                                       │    │
-│  │                               ▼                                       │    │
-│  │  ┌─────────────────────────────────────────────────────────────────┐ │    │
-│  │  │ 3.2 FORMAT CONVERSION                                     │ │    │
-│  │  │                                                                  │ │    │
-│  │  │  ┌────────────┐ ┌────────────┐ ┌────────────┐ ┌────────────┐   │ │    │
-│  │  │  │     │ │    JSON    │ │        │ │   │   │ │    │
-│  │  │  │     │ │ Structured │ │      │ │       │   │ │    │
-│  │  │  │    │ │  Topology  │ │    │ │    │   │ │    │
-│  │  │  │   │ │   Graph    │ │         │ │       │   │ │    │
-│  │  │  └────────────┘ └────────────┘ └────────────┘ └────────────┘   │ │    │
-│  │  └─────────────────────────────────────────────────────────────────┘ │    │
-│  │                               │                                       │    │
-│  │                               ▼                                       │    │
-│  │  ┌─────────────────────────────────────────────────────────────────┐ │    │
-│  │  │ 3.3 LLM NAVIGATION AGENT QUERY                                  │ │    │
-│  │  │     Input: Representation + Current Sub-Goal + Planning State   │ │    │
-│  │  │     Output: {subplan_status, next_place}                        │ │    │
-│  │  │     • subplan_status: "IN_PROGRESS" | "COMPLETED"               │ │    │
-│  │  │     • next_place: node_id (str) or [row, col] (grid)            │ │    │
-│  │  └─────────────────────────────────────────────────────────────────┘ │    │
-│  │                               │                                       │    │
-│  │                               ▼                                       │    │
-│  │  ┌─────────────────────────────────────────────────────────────────┐ │    │
-│  │  │ 3.4 STATE UPDATE                                                │ │    │
-│  │  │     • Parse next_place (resolve grid→node if needed)            │ │    │
-│  │  │     • Calculate new heading: bearing(current → next)            │ │    │
-│  │  │     • Update predicted_path.append(next_node)                   │ │    │
-│  │  │     • IF COMPLETED → increment sub_goal_index                   │ │    │
-│  │  │     • IF IN_PROGRESS → continue with same sub_goal              │ │    │
-│  │  └─────────────────────────────────────────────────────────────────┘ │    │
-│  │                               │                                       │    │
-│  │           ┌───────────────────┴───────────────────┐                   │    │
-│  │           ▼                                       ▼                   │    │
-│  │  ┌─────────────────┐                   ┌─────────────────┐           │    │
-│  │  │   COMPLETED     │                   │   IN_PROGRESS   │           │    │
-│  │  │ Move to next    │                   │ Same sub-goal   │           │    │
-│  │  │ sub-goal        │                   │ New position    │           │    │
-│  │  └─────────────────┘                   └─────────────────┘           │    │
-│  │                                                                       │    │
-│  └───────────────────────────────────────────────────────────────────────┘   │
-│                                                                              │
-│  TERMINATION CONDITIONS:                                                     │
-│  • All sub-goals completed (sub_goal_index >= len(sub_goals))               │
-│  • Max total steps exceeded (steps >= 100)                                   │
-│  • Max retries per sub-goal exceeded (retry >= 15)                          │
-└─────────────────────────────────────────────────────────────────────────────┘
-                                      │
-                                      ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                          STAGE 4: EVALUATION                                 │
-│  ┌────────────────────────────────────────────────────────────────────────┐ │
-│  │ Navigation Metrics:                                                     │ │
-│  │ • NE (Navigation Error): Haversine(predicted_end, goal)                │ │
-│  │ • SR (Success Rate): NE < 25m                                          │ │
-│  │ • OSR (Oracle Success Rate): Best method per instruction               │ │
-│  │ • SDTW (Success weighted by DTW): Path similarity scoring              │ │
-│  └────────────────────────────────────────────────────────────────────────┘ │
-│  ┌────────────────────────────────────────────────────────────────────────┐ │
-│  │ Path Metrics:                                                           │ │
-│  │ • Path Overlap: BFS expansion + Precision/Recall/F1                    │ │
-│  │ • Multi-threshold analysis: [25m, 50m, 100m, 150m]                     │ │
-│  │ • UpSet plots: Method agreement patterns                                │ │
-│  └────────────────────────────────────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+![plot](./assets/overall_architecture.png)
 
 ---
 
 ## 3. The Navigate Function: Visible Area Construction
 
 The `navigate()` function is the **core algorithm** that constructs the agent's visible surroundings from the current position. It simulates what a human would see while walking forward from a given starting point.
+
+![plot](./assets/visible_data_construction.png)
 
 ### 3.1 Function Signature
 
@@ -158,105 +30,10 @@ def navigate(
 ) -> List[Dict]:              # Returns path_data
 ```
 
-### 3.2 Algorithm Overview
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                    NAVIGATE FUNCTION: VISIBLE AREA BUILDER                   │
-└─────────────────────────────────────────────────────────────────────────────┘
+### 3.2 Key Helper Functions
 
-INPUT: starting_point, heading, pois, poi_mapping, units
-                │
-                ▼
-┌───────────────────────────────────────────────────────────────────────────┐
-│  PHASE 1: BUILD GRAPH STRUCTURES                                           │
-│  ┌─────────────────────────────────────────────────────────────────────┐  │
-│  │ 1.1 Parse area_links → Adjacency List                               │  │
-│  │     adjacency[source] = [{target: node_id}, ...]                    │  │
-│  │                                                                      │  │
-│  │ 1.2 Build node_connections for intersection detection               │  │
-│  │     node_connections[node] = {neighbor1, neighbor2, ...}            │  │
-│  │     Intersection = node where len(connections) > 2                  │  │
-│  └─────────────────────────────────────────────────────────────────────┘  │
-└───────────────────────────────────────────────────────────────────────────┘
-                │
-                ▼
-┌───────────────────────────────────────────────────────────────────────────┐
-│  PHASE 2: FIRST PASS - COLLECT PATH NODES                                  │
-│  ┌─────────────────────────────────────────────────────────────────────┐  │
-│  │ Starting from starting_point, traverse forward:                      │  │
-│  │                                                                      │  │
-│  │ WHILE iterations < MAX (1000) AND intersections_passed < units:     │  │
-│  │   1. Add current_node to path_node_ids                              │  │
-│  │   2. IF is_intersection(current_node):                              │  │
-│  │        intersections_passed++                                        │  │
-│  │        IF intersections_passed >= units:                            │  │
-│  │           Add 3 more nodes after intersection, then BREAK           │  │
-│  │   3. Find best_match (forward neighbor within ±100° tolerance)      │  │
-│  │   4. Move: current_node = best_match.target                         │  │
-│  │           current_heading = best_match.heading                      │  │
-│  └─────────────────────────────────────────────────────────────────────┘  │
-│                                                                            │
-│  OUTPUT: path_node_ids = {node1, node2, node3, ...}                       │
-└───────────────────────────────────────────────────────────────────────────┘
-                │
-                ▼
-┌───────────────────────────────────────────────────────────────────────────┐
-│  PHASE 3: POI PROXIMITY MAPPING                                            │
-│  ┌─────────────────────────────────────────────────────────────────────┐  │
-│  │ find_nearest_path_nodes_for_pois(pois, path_node_ids, max_dist=50m) │  │
-│  │                                                                      │  │
-│  │ FOR each landmark in pois:                                          │  │
-│  │   FOR each poi_node_id in landmark's POI list:                      │  │
-│  │     1. Get POI coordinates (lat, lng)                               │  │
-│  │     2. FOR each path_node in path_node_ids:                         │  │
-│  │          Calculate Haversine distance(POI, path_node)               │  │
-│  │          Track minimum distance                                      │  │
-│  │     3. IF min_distance <= 50m:                                      │  │
-│  │          Associate POI with nearest_path_node                       │  │
-│  └─────────────────────────────────────────────────────────────────────┘  │
-│                                                                            │
-│  OUTPUT: path_node_to_pois = {node_id: [(landmark, letter, poi_id, dist)]}│
-└───────────────────────────────────────────────────────────────────────────┘
-                │
-                ▼
-┌───────────────────────────────────────────────────────────────────────────┐
-│  PHASE 4: SECOND PASS - BUILD PATH_DATA WITH CONTEXT                       │
-│  ┌─────────────────────────────────────────────────────────────────────┐  │
-│  │ Starting from starting_point again, build detailed node info:       │  │
-│  │                                                                      │  │
-│  │ FOR each node along the path:                                       │  │
-│  │   1. Detect if intersection: is_intersection(current_node)          │  │
-│  │   2. Get connectivity: all neighbors with directions                │  │
-│  │      ┌─────────────────────────────────────────────────────────┐   │  │
-│  │      │ FOR each neighbor:                                       │   │  │
-│  │      │   heading_to_neighbor = bearing(current → neighbor)     │   │  │
-│  │      │   relative_dir = classify(heading, heading_to_neighbor) │   │  │
-│  │      │   IF relative_dir != "Back": add to connections         │   │  │
-│  │      └─────────────────────────────────────────────────────────┘   │  │
-│  │   3. Get nearby POIs from path_node_to_pois                        │  │
-│  │      ┌─────────────────────────────────────────────────────────┐   │  │
-│  │      │ FOR each POI near this node:                            │   │  │
-│  │      │   poi_heading = bearing(current → POI)                  │   │  │
-│  │      │   poi_direction = classify(heading, poi_heading)        │   │  │
-│  │      │   IF distance < 5m: POI is AT this node                 │   │  │
-│  │      │   ELSE: POI is SIDE_POI with direction                  │   │  │
-│  │      │   IF is_intersection AND (Left/Right): "on the corner"  │   │  │
-│  │      └─────────────────────────────────────────────────────────┘   │  │
-│  │   4. Build node_step dictionary                                    │  │
-│  │   5. Advance to next node (best forward match)                     │  │
-│  └─────────────────────────────────────────────────────────────────────┘  │
-└───────────────────────────────────────────────────────────────────────────┘
-                │
-                ▼
-┌───────────────────────────────────────────────────────────────────────────┐
-│  OUTPUT: path_data = [node_step_1, node_step_2, ...]                       │
-└───────────────────────────────────────────────────────────────────────────┘
-```
-
-### 3.3 Key Helper Functions
-
-#### 3.3.1 Heading Calculation (Spherical Bearing)
+#### 3.2.1 Heading Calculation (Spherical Bearing)
 ```python
 def calculate_heading_from_coords(from_lat, from_lng, to_lat, to_lng) -> float:
     """Calculate compass heading (0-360°) from one coordinate to another."""
@@ -274,7 +51,7 @@ def calculate_heading_from_coords(from_lat, from_lng, to_lat, to_lng) -> float:
     return compass_bearing
 ```
 
-#### 3.3.2 Heading Difference (Minimal Angular Distance)
+#### 3.2.2 Heading Difference (Minimal Angular Distance)
 ```python
 def get_heading_diff(h1, h2) -> float:
     """Calculate minimal difference between two headings (0-180)."""
@@ -282,7 +59,7 @@ def get_heading_diff(h1, h2) -> float:
     return min(diff, 360 - diff)
 ```
 
-#### 3.3.3 Relative Direction Classification
+#### 3.2.3 Relative Direction Classification
 ```python
 def get_relative_direction(current_heading, target_heading) -> str:
     """
@@ -316,14 +93,14 @@ def get_relative_direction(current_heading, target_heading) -> str:
                [+135°, +180°] ∪ [-180°, -135°]
 ```
 
-#### 3.3.4 Intersection Detection
+#### 3.2.4 Intersection Detection
 ```python
 def is_intersection(node_id) -> bool:
     """Node is an intersection if it connects to > 2 unique nodes."""
     return len(node_connections.get(node_id, [])) > 2
 ```
 
-#### 3.3.5 Forward Path Selection
+#### 3.2.5 Forward Path Selection
 ```python
 def get_connectivity_and_next(current_node, current_heading):
     """
@@ -359,56 +136,7 @@ def get_connectivity_and_next(current_node, current_heading):
     return best_match, connections
 ```
 
-### 3.4 Output Structure: path_data
-
-Each element in `path_data` represents one node along the visible path:
-
-```python
-node_step = {
-    # Core node info
-    "node_id": "osm_123456789",       # OSM node identifier
-    "is_intersection": True,           # True if degree > 2
-    "direction": 45.5,                 # Current heading at this node
-
-    # Connectivity - available directions from this node
-    "connectivity": [
-        {
-            "node_id": "osm_234567890",
-            "heading": 45.5,           # Absolute heading to this neighbor
-            "direction": "Forward"     # Relative direction
-        },
-        {
-            "node_id": "osm_345678901",
-            "heading": 135.0,
-            "direction": "Right"
-        },
-        {
-            "node_id": "osm_456789012",
-            "heading": 315.0,
-            "direction": "Left"
-        }
-    ],
-
-    # POIs visible from this node (> 5m away)
-    "side_pois": [
-        {
-            "poi": "bank",             # Landmark name from instruction
-            "letter": "A",             # Assigned identifier
-            "direction": "Right",      # Relative to current heading
-            "position": "on the corner", # or "left", "right", "forward"
-            "node_id": "poi_567890",   # POI node ID
-            "distance": 15.3           # Distance in meters
-        }
-    ],
-
-    # POI at this exact node (< 5m away) - optional
-    "poi": "cafe",                     # Landmark name
-    "poi_letter": "B",                 # Assigned identifier
-    "poi_position": "forward"          # Position description
-}
-```
-
-### 3.5 Visibility Depth Control
+### 3.3 Visibility Depth Control
 
 The `units` parameter controls how far the agent can "see":
 
@@ -432,7 +160,7 @@ units = 2:
 
 **Post-intersection extension**: After reaching the target intersection count, the algorithm continues for 3 more nodes to provide context about what lies ahead.
 
-### 3.6 POI Association Logic
+### 3.4 POI Association Logic
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -472,72 +200,6 @@ if is_intersection and poi_direction in ["Left", "Right"]:
     position = "on the corner"
 ```
 
-### 3.7 Complete Flow Example
-
-```
-INPUT:
-  starting_point = "osm_100"
-  heading = 0° (North)
-  pois = {"bank": ["poi_200"], "cafe": ["poi_300"]}
-  poi_mapping = {"bank": "A", "cafe": "B"}
-  units = 1
-
-PHASE 1 - Build Adjacency:
-  adjacency = {
-    "osm_100": [{target: "osm_101"}],
-    "osm_101": [{target: "osm_102"}, {target: "osm_103"}, {target: "osm_104"}],
-    "osm_102": [{target: "osm_105"}],
-    ...
-  }
-  node_connections = {
-    "osm_100": {"osm_101"},
-    "osm_101": {"osm_100", "osm_102", "osm_103", "osm_104"},  # degree=4 → INTERSECTION
-    ...
-  }
-
-PHASE 2 - First Pass (Collect Nodes):
-  Iteration 1: current_node = osm_100 → not intersection → move to osm_101
-  Iteration 2: current_node = osm_101 → IS INTERSECTION → intersections_passed=1
-               Since units=1, add 3 more nodes: osm_102, osm_105, osm_106
-               BREAK
-
-  path_node_ids = {osm_100, osm_101, osm_102, osm_105, osm_106}
-
-PHASE 3 - POI Mapping:
-  poi_200 (bank): nearest to osm_101, distance=25m → Associate
-  poi_300 (cafe): nearest to osm_102, distance=40m → Associate
-
-  path_node_to_pois = {
-    "osm_101": [("bank", "A", "poi_200", 25.0)],
-    "osm_102": [("cafe", "B", "poi_300", 40.0)]
-  }
-
-PHASE 4 - Second Pass (Build path_data):
-  Node osm_100:
-    is_intersection = False
-    connectivity = [{node_id: osm_101, heading: 5°, direction: Forward}]
-    side_pois = []
-
-  Node osm_101:
-    is_intersection = True
-    connectivity = [
-      {node_id: osm_102, heading: 10°, direction: Forward},
-      {node_id: osm_103, heading: 90°, direction: Right},
-      {node_id: osm_104, heading: 270°, direction: Left}
-    ]
-    side_pois = [{poi: "bank", letter: "A", direction: Right, position: "on the corner", distance: 25.0}]
-
-  Node osm_102:
-    is_intersection = False
-    connectivity = [{node_id: osm_105, heading: 15°, direction: Forward}]
-    side_pois = [{poi: "cafe", letter: "B", direction: Right, distance: 40.0}]
-
-  ... (osm_105, osm_106)
-
-OUTPUT: path_data = [node_step_100, node_step_101, node_step_102, node_step_105, node_step_106]
-```
-
----
 
 ## 4. Detailed Component Descriptions
 

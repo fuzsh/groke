@@ -9,7 +9,7 @@ from rapidfuzz import fuzz
 
 from src.visualize import visualize_area
 
-instruction_id = 6625
+instruction_id = 4742
 split_file = "test_seen.json"
 
 # Get the data, expanding the neighborhood by 20 degrees
@@ -22,7 +22,17 @@ area_data = get_data_by_instruction(
 
 print(area_data['instruction_data']['instructions'])
 
-visualize_area(area_data, focused_node_id=[])
+# print(area_data)
+
+visualize_area(area_data, focused_node_id=[
+    "7227e68fd7b64cd4ad4232b38550cc19",
+                "7362d8cb9a3e421c93294dd231111ba3",
+                "c2a549516468432bb0fe9f8b7d3b9f2b",
+                "42432194",
+                "53ebded83d984acfa33e19d32ab3102e",
+                "f57523382da84d69999b370afd0687ab",
+                "4c20c8074b35482484fbf1351265b341"
+])
 
 # with open('test_seen_json_dump.json', 'r') as f:
 #     data = json.load(f)
