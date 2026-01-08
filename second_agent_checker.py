@@ -24,7 +24,7 @@ for r in rows:
 
 wrong_outputs = 0
 for idx, ni in enumerate(navigation_instructions):
-    split_file = "test_seen.json"
+    split_file = "paper_results/test_seen.json"
 
     instruction_id = int(ni['key'])
     if instruction_id != 2184:

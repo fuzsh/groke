@@ -47,7 +47,7 @@ async def run_navigation():
     # Step 3: Load navigation data
     print("\n[3/5] Loading navigation data...")
     instruction_id = 6220
-    split_file = "test_seen.json"
+    split_file = "paper_results/test_seen.json"
 
     area_data = get_data_by_instruction(
         instruction_id,

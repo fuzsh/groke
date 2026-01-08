@@ -10,7 +10,7 @@ from rapidfuzz import fuzz
 from src.visualize import visualize_area
 
 instruction_id = 4742
-split_file = "test_seen.json"
+split_file = "paper_results/test_seen.json"
 
 # Get the data, expanding the neighborhood by 20 degrees
 area_data = get_data_by_instruction(

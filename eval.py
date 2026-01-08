@@ -65,7 +65,7 @@ with open(f"ablation_study/grid.jsonl", 'r') as f:
 
 grid = []
 for idx, ni in enumerate(grid_old):
-    split_file = "test_seen.json"
+    split_file = "paper_results/test_seen.json"
 
     instruction_id = int(ni['key'])
     subgoal_status = ni['subplan_status']

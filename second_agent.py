@@ -204,7 +204,7 @@ def _get_current_instruction_poi(sub_instruction_text, landmarks_in_area):
 requests = []
 for idx, ni in enumerate(navigation_instructions):
     print(f'id {idx} started to run')
-    split_file = "test_seen.json"
+    split_file = "paper_results/test_seen.json"
 
     instruction_id = int(ni['key'])
     sub_goals = ni['sub_goals']
