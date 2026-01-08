@@ -10,6 +10,24 @@ The system implements a **Multi-Agent Agentic Navigation Framework** for route n
 
 ---
 
+## 2. Reproducibility
+
+## 2.1. Instruction Generation
+
+## 2.2. Step Generator
+
+## 2.3. Evaluation
+
+## 2.3.0. How ?
+
+## 2.3.1. Performance Report Paper
+
+## 2.3.2. computational Report Paper
+
+
+
+---
+
 ## 3. The Navigate Function: Visible Area Construction
 
 The `navigate()` function is the **core algorithm** that constructs the agent's visible surroundings from the current position. It simulates what a human would see while walking forward from a given starting point.
@@ -33,7 +51,7 @@ def navigate(
 
 ### 3.2 Key Helper Functions
 
-#### 3.2.1 Heading Calculation (Spherical Bearing)
+#### 3.3.1 Heading Calculation (Spherical Bearing)
 ```python
 def calculate_heading_from_coords(from_lat, from_lng, to_lat, to_lng) -> float:
     """Calculate compass heading (0-360°) from one coordinate to another."""
@@ -51,7 +69,7 @@ def calculate_heading_from_coords(from_lat, from_lng, to_lat, to_lng) -> float:
     return compass_bearing
 ```
 
-#### 3.2.2 Heading Difference (Minimal Angular Distance)
+#### 3.3.2 Heading Difference (Minimal Angular Distance)
 ```python
 def get_heading_diff(h1, h2) -> float:
     """Calculate minimal difference between two headings (0-180)."""
@@ -59,7 +77,7 @@ def get_heading_diff(h1, h2) -> float:
     return min(diff, 360 - diff)
 ```
 
-#### 3.2.3 Relative Direction Classification
+#### 3.3.3 Relative Direction Classification
 ```python
 def get_relative_direction(current_heading, target_heading) -> str:
     """
@@ -93,20 +111,20 @@ def get_relative_direction(current_heading, target_heading) -> str:
                [+135°, +180°] ∪ [-180°, -135°]
 ```
 
-#### 3.2.4 Intersection Detection
+#### 3.3.4 Intersection Detection
 ```python
 def is_intersection(node_id) -> bool:
     """Node is an intersection if it connects to > 2 unique nodes."""
     return len(node_connections.get(node_id, [])) > 2
 ```
 
-#### 3.2.5 Forward Path Selection
+#### 3.3.5 Forward Path Selection
 ```python
 def get_connectivity_and_next(current_node, current_heading):
     """
     Returns:
     1. best_match: Best forward neighbor (within ±100° tolerance)
-    2. connections: All non-back neighbors with directions
+    3. connections: All non-back neighbors with directions
     """
     candidates = adjacency[current_node]
 
@@ -186,7 +204,7 @@ units = 2:
 
     In path_data:
     - path_node_1.side_pois = [POI_A (Right, 30m), POI_B (Left, 8m)]
-    - path_node_2.side_pois = [POI_C (Right, 45m)]
+    - path_node_3.side_pois = [POI_C (Right, 45m)]
 ```
 
 **Distance Thresholds:**
@@ -199,424 +217,3 @@ units = 2:
 if is_intersection and poi_direction in ["Left", "Right"]:
     position = "on the corner"
 ```
-
-
-## 4. Detailed Component Descriptions
-
-### 4.1 Stage 1: Instruction Parsing Agent
-
-**Purpose**: Parse natural language navigation instruction into structured, machine-readable components.
-
-**Agent**: `InstructionDivider`
-
-**Inputs**:
-- Full navigation instruction (natural language string)
-
-**Outputs**:
-```json
-{
-  "landmarks": [
-    {"name": "bank", "category": "amenity"},
-    {"name": "cafe", "category": "amenity"}
-  ],
-  "sub_goals": [
-    {"description": "Go straight to the bank", "status": "TODO"},
-    {"description": "Turn right at the cafe", "status": "TODO"}
-  ]
-}
-```
-
-**Processing**:
-1. **Landmark Extraction**: Identify physical entities (traffic lights, stop signs, banks, shops, restaurants, parks, etc.)
-2. **Action Decomposition**: Break into atomic actions using only: `MOVE_FORWARD`, `TURN_LEFT`, `TURN_RIGHT`
-3. **Relation Mapping**: Extract spatial relationships (at, past, before, after)
-
-**Prompt Template** (from `prompts.py`):
-```
-[SYSTEM ROLE]
-You are a Navigation Instruction Parser. Your goal is to translate natural
-language navigation instructions into structured, machine-readable sub-goals
-compatible with OpenStreetMap (OSM) data.
-
-[DEFINITIONS]
-1. LANDMARKS (OSM POIs): Traffic lights, stop signs, banks, shops, restaurants...
-2. ACTIONS: MOVE_FORWARD, TURN_LEFT, TURN_RIGHT
-3. RELATIONS: Spatial relationship between Action and Landmark
-```
-
----
-
-### 4.2 Stage 2: Data Preparation
-
-#### 4.2.1 OSM Data Loading (`src/data_loader.py`)
-
-**Function**: `get_data_by_instruction(instruction_id, split_file, base_path, neighbor_degrees=2)`
-
-**Process**:
-1. Load ground-truth path (`osm_path`) from split file
-2. Load OSM graph data:
-   - **nodes.txt**: `{osm_id, lat, lng}`
-   - **links.txt**: `{source, heading, target}`
-   - **pois.txt**: `{poi_id, lat, lng, tags}`
-   - **poi_links.txt**: `{osm_node, poi_id}`
-3. Expand area by N neighbor degrees (BFS from path nodes)
-4. Filter to connected subgraph
-
-**Output**:
-```python
-{
-  "instruction_data": {...},
-  "area_nodes": {osm_id: {"lat": float, "lng": float}},
-  "area_links": [{"source": str, "target": str, "heading": float}],
-  "area_pois": {poi_id: {"lat": float, "lng": float, "tags": dict}},
-  "area_poi_links": [{"osm_id": str, "poi_id": str}]
-}
-```
-
-#### 4.2.2 Landmark Grounding
-
-**Function**: `_find_available_pois(area_pois, landmarks)`
-
-**Method**: Fuzzy string matching using RapidFuzz
-- Threshold: `partial_ratio > 70%`
-- Maps instruction landmarks → OSM POI node IDs
-- Assigns unique letter identifiers (A, B, C, ..., excluding S and P)
-
----
-
-### 4.3 Stage 3: Agentic Navigation Loop
-
-#### 4.3.1 Fetch Surroundings (Graph Traversal)
-
-**Function**: `navigate(map_json, starting_point, heading, pois, poi_mapping, units=1)`
-
-**Location**: `scorer/graph_context.py`
-
-**Algorithm**:
-1. Build adjacency list from `area_links`
-2. Detect intersections: nodes with degree > 2
-3. Heading-relative traversal:
-   - For each neighbor, calculate bearing from current position
-   - Classify by relative direction:
-     - **Forward**: heading ± 45°
-     - **Left**: heading - 135° to heading - 45°
-     - **Right**: heading + 45° to heading + 135°
-4. Track POIs within 50m of path nodes
-
-**Output** (`path_data`):
-```python
-[
-  {
-    "node_id": "osm_123",
-    "is_intersection": False,
-    "connectivity": [
-      {"node_id": "osm_124", "heading": 45.5, "direction": "Forward"}
-    ],
-    "side_pois": [
-      {"poi": "bank", "letter": "A", "direction": "Right", "distance": 30.5}
-    ],
-    "direction": 45.0  # current heading
-  },
-  ...
-]
-```
-
-#### 4.3.2 Multi-Format Conversion
-
-**Location**: `scorer/json_formats.py`
-
-The system generates **four parallel representations** of the navigation context:
-
-##### JSON Representation
-Structured graph topology with explicit connections.
-
-```json
-{
-  "current_position": {
-    "node_id": "osm_123",
-    "is_intersection": false,
-    "heading_degrees": 45.0
-  },
-  "nodes": [
-    {
-      "node_id": "osm_123",
-      "type": "waypoint",
-      "connections": [
-        {"target_node_id": "osm_124", "heading": 45.5, "direction": "Forward"}
-      ]
-    }
-  ],
-  "pois": [
-    {"poi_id": "poi_456", "name": "Bank", "letter": "A", "direction": "Right"}
-  ]
-}
-```
-
-
-#### 4.3.3 LLM Navigation Agent Query
-
-**Agent**: `NodeNavigator`
-
-**Input Structure**:
-```
-[TASK DESCRIPTION]
-You are an embodied agent navigating using a {format_type} representation.
-
-[INPUT FORMAT]
-Instruction: {full_instruction}
-Current Sub-Goal: {current_sub_goal}
-Sub-Goal State: IN PROGRESS
-{landmark_legend}
-
-Navigation Context:
-{representation}
-
-Planning State:
-{planning_state}
-
-[OUTPUT FORMAT - STRICT JSON]
-1. subplan_status: "IN_PROGRESS" | "COMPLETED"
-2. next_place: node_id (string) OR [row, col] (grid)
-```
-
-**Output Schema** (from `templates.py`):
-```json
-{
-  "type": "OBJECT",
-  "properties": {
-    "subplan_status": {
-      "type": "STRING",
-      "enum": ["IN_PROGRESS", "COMPLETED"]
-    },
-    "next_place": {"type": "STRING"}  // or ARRAY for grid
-  },
-  "required": ["subplan_status", "next_place"]
-}
-```
-
-#### 4.3.4 State Update
-
-**Functions**: `_get_heading_to_node()`, `process_results_for_method()`
-
-**Location**: `data_manager.py`, `step_generator.py`
-
-**Heading Calculation (Spherical Bearing)**:
-```python
-def calculate_bearing(lat1, lng1, lat2, lng2):
-    dLon = radians(lng2 - lng1)
-    lat1, lat2 = radians(lat1), radians(lat2)
-
-    y = sin(dLon) * cos(lat2)
-    x = cos(lat1) * sin(lat2) - sin(lat1) * cos(lat2) * cos(dLon)
-
-    bearing = degrees(atan2(y, x))
-    compass_bearing = (bearing + 360) % 360  # Normalize to [0, 360)
-    return compass_bearing
-```
-
-**State Update Logic**:
-```python
-if subplan_status == "COMPLETED":
-    # Move to next sub-goal
-    current_sub_goal_index += 1
-    num_retry_current_instruction = 0
-else:  # IN_PROGRESS
-    # Continue with same sub-goal from new position
-    current_node = next_node
-    current_heading = calculate_bearing(prev_node, next_node)
-    predicted_path.append(next_node)
-```
-
-**Grid Resolution** (`resolve_grid_next_place()`):
-- Converts `[row, col]` grid coordinates to OSM node ID
-- Uses `get_node_id_from_position()` from grid representation
-
----
-
-### 4.4 Stage 4: Evaluation
-
-**Location**: `evaluation_metrics.py`
-
-#### 4.4.1 Navigation Metrics
-
-##### Navigation Error (NE)
-Distance between agent's stopping point and goal destination.
-
-```python
-def calculate_navigation_error(predicted_path, osm_path, area_nodes):
-    pred_end = predicted_path[-1]
-    osm_end = osm_path[-1]
-    return haversine_distance(
-        area_nodes[pred_end]['lat'], area_nodes[pred_end]['lng'],
-        area_nodes[osm_end]['lat'], area_nodes[osm_end]['lng']
-    )
-```
-
-##### Success Rate (SR)
-Binary success metric.
-```
-SR = 1 if NE < 25m else 0
-```
-
-##### Oracle Success Rate (OSR)
-Best-case success when optimal method is selected per instruction.
-```
-OSR = max(SR_json, SR_textual, SR_grid, SR_graphvis)
-```
-
-##### Success weighted by Path Length (SDTW)
-Dynamic Time Warping based path similarity.
-
-#### 4.4.2 Path Metrics
-
-**Path Expansion** (`expand_predicted_path()`):
-- Uses BFS to find intermediate nodes between predicted waypoints
-- Removes duplicates while preserving order
-
-**Path Overlap**:
-```python
-overlap = len(set(expanded_path) & set(osm_path))
-precision = overlap / len(expanded_path)
-recall = overlap / len(osm_path)
-f1 = 2 * precision * recall / (precision + recall)
-```
-
-#### 4.4.3 Haversine Distance Formula
-
-```python
-def haversine_distance(lat1, lng1, lat2, lng2):
-    R = 6371000  # Earth's radius in meters
-
-    phi1, phi2 = radians(lat1), radians(lat2)
-    delta_phi = radians(lat2 - lat1)
-    delta_lambda = radians(lng2 - lng1)
-
-    a = sin(delta_phi/2)**2 + cos(phi1)*cos(phi2)*sin(delta_lambda/2)**2
-    c = 2 * atan2(sqrt(a), sqrt(1-a))
-
-    return R * c  # Distance in meters
-```
-
----
-
-## 4. Key Algorithms Summary
-
-| Algorithm | Purpose | Formula/Method |
-|-----------|---------|----------------|
-| **Spherical Bearing** | Calculate heading between two coordinates | `atan2(sin(dLon)*cos(lat2), cos(lat1)*sin(lat2) - sin(lat1)*cos(lat2)*cos(dLon))` |
-| **Haversine Distance** | Calculate distance between two coordinates | `R * 2 * atan2(sqrt(a), sqrt(1-a))` |
-| **BFS Path Finding** | Find shortest path in graph | Standard BFS with path reconstruction |
-| **Fuzzy Matching** | Match landmarks to POIs | RapidFuzz `partial_ratio > 70%` |
-| **Heading-Relative Direction** | Classify neighbor direction | Forward: ±45°, Left: -135° to -45°, Right: +45° to +135° |
-| **Intersection Detection** | Identify decision points | Node degree > 2 |
-| **Grid Cell Mapping** | Convert coordinates to grid | Delta-based stepping with heading normalization |
-
----
-
-## 5. Data Flow Summary
-
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                              COMPLETE DATA FLOW                              │
-└─────────────────────────────────────────────────────────────────────────────┘
-
-1. INPUT
-   └── Natural Language Instruction
-         │
-         ▼
-2. INSTRUCTION PARSING (Agent 1: InstructionDivider)
-   ├── Sub-Goals: ["Go to bank", "Turn right at cafe"]
-   └── Landmarks: [{name: "bank", category: "amenity"}, ...]
-         │
-         ▼
-3. DATA LOADING
-   ├── OSM Graph: nodes, links, pois
-   └── Neighbor Expansion: N-degree subgraph
-         │
-         ▼
-4. LANDMARK GROUNDING
-   └── Fuzzy Match: "bank" → osm_poi_123 → Letter "A"
-         │
-         ▼
-5. NAVIGATION LOOP (Agent 2: NodeNavigator)
-   │
-   ├──► 5a. GRAPH TRAVERSAL (navigate())
-   │        └── path_data with connectivity & POIs
-   │              │
-   │              ▼
-   ├──► 5b. MULTI-FORMAT CONVERSION
-   │        ├── Textual: Natural language
-   │        ├── JSON: Structured graph
-   │        ├── Grid: Matrix map
-   │        └── GraphViz: ASCII graph
-   │              │
-   │              ▼
-   ├──► 5c. LLM QUERY
-   │        └── Output: {status, next_place}
-   │              │
-   │              ▼
-   ├──► 5d. STATE UPDATE
-   │        ├── New position
-   │        ├── New heading (bearing calculation)
-   │        └── Sub-goal progress
-   │              │
-   │              ▼
-   └──► TERMINATION CHECK
-        ├── All sub-goals done? → EXIT
-        ├── Max steps reached? → EXIT
-        └── Else → LOOP BACK TO 5a
-               │
-               ▼
-6. EVALUATION
-   ├── Navigation Error (NE): Haversine distance
-   ├── Success Rate (SR): NE < 25m
-   ├── Path Overlap: Precision/Recall/F1
-   └── Method Comparison: UpSet analysis
-```
-
----
-
-## 6. File Structure for Reference
-
-| File | Purpose |
-|------|---------|
-| `data_manager.py` | State management, heading calculation, results processing |
-| `step_generator.py` | Prompt generation, multi-format conversion |
-| `scorer/orchestrator.py` | Main agentic loop, multi-agent coordination |
-| `scorer/graph_context.py` | Graph traversal, navigate() function |
-| `scorer/presentation_formats.py` | 4 representation generators |
-| `scorer/grid_representation.py` | Grid conversion & POI placement |
-| `prompts.py` | LLM prompt templates |
-| `templates.py` | Batch request formatting |
-| `evaluation_metrics.py` | NE, SR, OSR, SDTW, path overlap |
-| `src/data_loader.py` | OSM data loading |
-
----
-
-## 7. Figure Annotation Suggestions
-
-### Main Architecture Figure Elements:
-
-1. **Input Box**: Natural language instruction with example
-2. **Agent 1 Block**: InstructionDivider with sub-goals + landmarks output
-3. **Data Loading Block**: OSM components (nodes, links, POIs)
-4. **Navigation Loop Block**:
-   - Graph traversal sub-block
-   - 4 parallel representation boxes (Textual/JSON/Grid/GraphViz)
-   - LLM query arrow
-   - State update feedback loop
-5. **Decision Diamond**: Status check (COMPLETED/IN_PROGRESS)
-6. **Evaluation Block**: Metrics (NE, SR, OSR, SDTW)
-
-### Color Coding Suggestion:
-- **Blue**: Input/Output data
-- **Green**: Agent processing blocks
-- **Orange**: OSM data components
-- **Purple**: Multi-format representations
-- **Red**: Evaluation metrics
-
-### Arrow Labels:
-- Solid arrows: Data flow
-- Dashed arrows: Control flow / feedback loops
-- Thick arrows: Main pipeline
-- Thin arrows: Internal processing
