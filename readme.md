@@ -12,17 +12,255 @@ The system implements a **Multi-Agent Agentic Navigation Framework** for route n
 
 ## 2. Reproducibility
 
-## 2.1. Instruction Generation
+### 2.0. Installation
 
-## 2.2. Step Generator
+```bash
+# Clone the repository
+git clone <repository-url>
+cd groke
 
-## 2.3. Evaluation
+# Install dependencies
+pip install -r requirements.txt
+```
 
-## 2.3.0. How ?
+**Key Dependencies:**
+- `google-adk` - Google Agent Development Kit for multi-agent orchestration
+- `google-genai` - Google Generative AI SDK
+- `rapidfuzz` - Fuzzy string matching for POI detection
+- `matplotlib`, `numpy`, `scipy` - Visualization and analysis
+- `networkx` - Graph operations
 
-## 2.3.1. Performance Report Paper
+### 2.1. Instruction Generation (`first_agent.py`)
 
-## 2.3.2. computational Report Paper
+The first agent parses navigation instructions from raw text and generates sub-goals and landmarks.
+
+**Input:** Raw navigation instructions from Map2Seq dataset
+**Output:** Parsed sub-goals and identified landmarks in JSONL format
+
+```bash
+# Process navigation instructions
+python first_agent.py
+```
+
+This reads from `main_results/main_test_seen.jsonl` and outputs parsed navigation data with:
+- `sub_goals`: List of sequential navigation sub-instructions
+- `landmarks`: Identified POIs mentioned in the instructions
+
+### 2.2. Step Generator (`step_generator.py`)
+
+Generates navigation prompts for each step based on the current agent state. Supports multiple representation formats for ablation studies.
+
+**Usage:**
+```bash
+python step_generator.py --input main_test_seen.json --output-dir main_prompt_seen --step <STEP_NUMBER>
+```
+
+**Arguments:**
+
+| Argument | Description | Default |
+|----------|-------------|---------|
+| `--input, -i` | Input state file (JSON) | `main_test_seen.json` |
+| `--output-dir, -o` | Output directory for prompts | `main_prompt_seen` |
+| `--step, -s` | Step number (required) | - |
+| `--split-file` | Data split file | `test_seen.json` |
+| `--methods, -m` | Methods to generate: `json`, `textual`, `grid`, `graph_vis` | all |
+
+
+**Example - Generate step 2 prompts for JSON representation:**
+```bash
+python step_generator.py -i main_test_seen.json -o main_prompt_seen -s 2 -m json
+```
+
+**Output:** JSONL files per method: `step{N}_{method}.jsonl`
+
+**Representation Formats:**
+- `json`: Structured JSON navigation context
+- `textual`: Natural language description
+- `grid`: 2D grid matrix representation
+- `graph_vis`: GraphViz DOT format
+
+### 2.3. Evaluation
+
+#### 2.3.1. Running Evaluation (`evaluation_metrics.py`)
+
+Computes navigation metrics comparing predicted paths against ground truth OSM paths.
+
+**Usage:**
+```bash
+python evaluation_metrics.py --input <predictions.json> --output <output_dir> --split-file <split.json>
+```
+
+**Arguments:**
+
+| Argument | Description | Default |
+|----------|-------------|---------|
+| `--input, -i` | Predictions JSON file | `test_seen_divider.json` |
+| `--output, -o` | Output directory | `evaluation_results` |
+| `--split-file` | Data split file | `test_seen_200.json` |
+| `--threshold` | Distance threshold (meters) | `25` |
+| `--difficulty-file` | Optional difficulty assessment file | `None` |
+
+**Example - Evaluate on test_seen split:**
+```bash
+python evaluation_metrics.py \
+    --input paper_results/main_test_seen.json \
+    --output evaluation_results/seen \
+    --split-file test_seen.json \
+    --difficulty-file correctness_hardness.json
+```
+
+**Output Files:**
+```
+evaluation_results/
+├── detailed_results.json          # Aggregated metrics
+├── individual_results.json        # Per-instruction results
+├── results_by_difficulty.json     # Difficulty-based analysis
+├── correlation_results.json       # Human annotation correlations
+├── correctness_by_subgoals.png    # Bar chart by sub-goal count
+├── endpoint_distance_distribution.png
+├── navigation_metrics.png         # NE, SR, OSR, SDTW plots
+├── accuracy_by_threshold.png      # 25m, 50m, 100m, 150m
+└── upset_plot_*.png               # Method agreement patterns
+```
+
+#### 2.3.2. Performance Metrics
+
+The evaluation computes standard VLN (Vision-and-Language Navigation) metrics:
+
+| Metric | Description |
+|--------|-------------|
+| **NE** (Navigation Error) | Distance (m) between predicted endpoint and goal |
+| **SR** (Success Rate) | % predictions within 25m of goal |
+| **OSR** (Oracle Success Rate) | % paths passing within 25m of goal at any point |
+| **SDTW** (Success-weighted DTW) | Path similarity weighted by success |
+| **nDTW** (Normalized DTW) | Normalized Dynamic Time Warping distance |
+
+**Path Overlap Metrics:**
+- Overlap Ratio: Intersection / Union of path nodes
+- F1 Score: Harmonic mean of precision and recall
+- Sequence Overlap: Longest common subsequence ratio
+
+#### 2.3.3. Computational Cost Analysis (`usage_metadata_anal.py`)
+
+Analyzes token usage and computational costs from inference results.
+
+**Usage:**
+```bash
+python usage_metadata_anal.py <folder_path> [options]
+```
+
+**Arguments:**
+
+| Argument | Description |
+|----------|-------------|
+| `folder` | Path(s) to folder(s) containing JSONL results |
+| `-v, --verbose` | Show per-instruction details |
+| `-o, --output` | Export results to JSON file |
+| `-c, --compare` | Compare statistics across multiple folders |
+
+**Examples:**
+```bash
+# Analyze single experiment
+python usage_metadata_anal.py paper_results/main_results_seen
+
+# Compare multiple experiments
+python usage_metadata_anal.py paper_results/ablation_study_json \
+    paper_results/ablation_study_low \
+    paper_results/ablation_study_high \
+    --compare
+
+# Export to JSON
+python usage_metadata_anal.py paper_results/main_results_seen -o token_analysis.json
+```
+
+**Output Statistics:**
+- Steps per instruction (mean, median, min, max)
+- Token counts: prompt, candidates, thoughts, total
+- Percentiles: P25, P75, P90, P95
+- Per-step breakdown
+
+**Sample Output:**
+```
+============================================================
+SUMMARY STATISTICS (per instruction totals)
+============================================================
+
+Number of instructions: 200
+
+Steps per instruction:
+  Mean:   4.32
+  Median: 4
+  Min:    1
+  Max:    10
+
+Total Tokens (per instruction):
+  Sum:    2,450,000
+  Mean:   12,250
+  Median: 11,500
+```
+
+### 2.4. Running the Full Pipeline
+
+**Step 1: Generate sub-instructions from raw navigation text**
+```bash
+python first_agent.py
+```
+
+**Step 2: Generate navigation prompts for each step**
+```bash
+# For test_seen split
+# For step in 1 2 3 4 5 6 7 8 9 10; do
+python data_manager.py 
+python step_generator.py -i main_test_seen.json -o main_prompt_seen -s $step
+#
+```
+
+**Step 3: Run the navigation agent (single instruction)**
+```bash
+python main.py
+```
+
+**Step 4: Process results and generate next steps**
+```bash
+python process_results.py
+```
+
+**Step 5: Evaluate predictions**
+```bash
+python evaluation_metrics.py \
+    --input paper_results/main_test_seen.json \
+    --output evaluation_results \
+    --split-file test_seen.json
+```
+
+**Step 6: Analyze computational costs**
+```bash
+python usage_metadata_anal.py paper_results/main_results_seen -v
+```
+
+### 2.5. Data Structure
+
+```
+data/
+└── map2seq/
+    ├── osm/                    # OpenStreetMap area data
+    │   └── <area_id>/
+    │       ├── nodes.json      # OSM nodes with coordinates
+    │       ├── links.json      # OSM way connections
+    │       └── pois.json       # Points of interest
+    ├── splits/
+    │   ├── test_seen.json      # Test split (seen areas)
+    │   └── test_unseen.json    # Test split (unseen areas)
+    └── readme.txt
+
+paper_results/
+├── main_test_seen.json         # Prediction state file
+├── main_results_seen/          # Step-by-step results
+│   ├── step1_json.jsonl
+│   ├── step2_json.jsonl
+│   └── ...
+└── ablation_study_*/           # Ablation experiments
+```
 
 
 
