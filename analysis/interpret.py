@@ -5,7 +5,7 @@ import json
 from scipy.stats import gaussian_kde
 
 # Load data
-with open('correctness_hardness.json', 'r') as f:
+with open('annotations/correctness_hardness.json', 'r') as f:
     data = json.load(f)
 
 

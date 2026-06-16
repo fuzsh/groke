@@ -84,10 +84,10 @@
 #     landmarks_bert[instruction['instructions_id']] = bert_entities
 #
 #
-# with open("poi_analysis_gliner.json", 'w') as f:
+# with open("annotations/poi_analysis_gliner.json", 'w') as f:
 #     f.write(json.dumps(landmarks_gliner, indent=4))
 #
-# with open("poi_analysis_bert.json", 'w') as f:
+# with open("annotations/poi_analysis_bert.json", 'w') as f:
 #     f.write(json.dumps(landmarks_bert, indent=4))
 import json
 
@@ -97,10 +97,10 @@ landmarks_gliner = {}
 landmarks_bert = {}
 landmarks_gemmeni3 = {}
 
-with open("poi_analysis_gliner.json", 'r') as f:
+with open("annotations/poi_analysis_gliner.json", 'r') as f:
     landmarks_gliner = json.loads(f.read())
 
-with open("poi_analysis_bert.json", 'r') as f:
+with open("annotations/poi_analysis_bert.json", 'r') as f:
     landmarks_bert = json.loads(f.read())
 
 def load_navigation_instructions(file_path: str):

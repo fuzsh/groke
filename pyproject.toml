@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "groke"
+version = "0.1.0"
+description = "Vision-free navigation-instruction evaluation via graph reasoning on OpenStreetMap"
+readme = "readme.md"
+requires-python = ">=3.11"
+
+# Core direct dependencies. For the exact, fully-pinned environment used to
+# produce the paper results, install from requirements.txt instead:
+#   pip install -r requirements.txt
+dependencies = [
+    "google-adk",
+    "google-genai",
+    "rapidfuzz",
+    "json-repair",
+    "networkx",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "scipy",
+    "graphviz",
+    "tiktoken",
+    "langfuse",
+    "openinference-instrumentation-google-adk",
+]
+
+[tool.setuptools]
+packages = [
+    "groke",
+    "groke.scorer",
+    "groke.agents",
+    "groke.evaluation",
+]

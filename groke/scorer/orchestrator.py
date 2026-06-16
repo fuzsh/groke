@@ -7,8 +7,8 @@ from typing import AsyncGenerator, Dict, override, Optional, Tuple
 from google.adk.events import Event
 from rapidfuzz import fuzz
 
-from scorer.graph_context import navigate
-from scorer.grid_repsentation import convert2grid, get_node_id_from_position
+from .graph_context import navigate
+from .grid_representation import convert2grid, get_node_id_from_position
 
 
 class NavigationOrchestrator(BaseAgent):

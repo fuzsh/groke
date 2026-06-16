@@ -3,8 +3,8 @@ from collections import defaultdict
 
 import json_repair
 
-from scorer import navigate, get_node_id_from_position
-from src.data_loader import get_data_by_instruction
+from groke.scorer import navigate, get_node_id_from_position
+from groke.data_loader import get_data_by_instruction
 
 json_rows = []
 

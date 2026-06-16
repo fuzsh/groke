@@ -8,7 +8,12 @@ full.json
 __pycache__/
 *.pyc
 *.pyo
+*.egg-info/
+.venv/
+venv/
 
+# macOS
+.DS_Store
 
 api_key
 step2_results/

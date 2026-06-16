@@ -31,7 +31,7 @@ except ImportError:
     HAS_UPSETPLOT = False
     print("Warning: upsetplot not installed. UpSet plots will be skipped.")
 
-from src.data_loader import get_data_by_instruction
+from groke.data_loader import get_data_by_instruction
 
 # =============================================================================
 # CONSTANTS

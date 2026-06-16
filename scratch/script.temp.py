@@ -4,13 +4,13 @@ from typing import Dict, Optional, Tuple
 import json_repair
 from rapidfuzz import fuzz
 
-from prompts import GRID_NAVIGATOR_PROMPT, TEXTUAL_NAVIGATOR_PROMPT, JSON_NAVIGATOR_PROMPT, GRAPH_VIS_NAVIGATOR_PROMPT
-from scorer.graph_context import navigate
-from scorer.grid_repsentation import convert2grid
-from scorer.presentation_formats import generate_all_representations
-from src.data_loader import get_data_by_instruction
-from src.visualize import visualize_area
-from templates import navigator_batch
+from groke.prompts import GRID_NAVIGATOR_PROMPT, TEXTUAL_NAVIGATOR_PROMPT, JSON_NAVIGATOR_PROMPT, GRAPH_VIS_NAVIGATOR_PROMPT
+from groke.scorer.graph_context import navigate
+from groke.scorer.grid_representation import convert2grid
+from groke.scorer.presentation_formats import generate_all_representations
+from groke.data_loader import get_data_by_instruction
+from groke.visualize import visualize_area
+from groke.templates import navigator_batch
 
 previous_visited = []
 

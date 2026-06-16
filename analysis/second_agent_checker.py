@@ -2,13 +2,13 @@ import json
 
 import json_repair
 
-from scorer.graph_context import navigate
-from scorer.grid_repsentation import get_node_id_from_position
-from src.data_loader import get_data_by_instruction
-from src.visualize import visualize_area
+from groke.scorer.graph_context import navigate
+from groke.scorer.grid_representation import get_node_id_from_position
+from groke.data_loader import get_data_by_instruction
+from groke.visualize import visualize_area
 
 rows = []
-with open(f"predications/test_seen_navigator_1.jsonl", 'r') as f:
+with open(f"predictions/test_seen_navigator_1.jsonl", 'r') as f:
     for l in f.readlines():
         rows.append(json.loads(l))
 
