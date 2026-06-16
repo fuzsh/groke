@@ -19,9 +19,17 @@ The system implements a **Multi-Agent Agentic Navigation Framework** for route n
 git clone <repository-url>
 cd groke
 
-# Install dependencies
+# Install the package (editable) — this puts `groke` on the import path
+pip install -e .
+
+# For the exact, fully-pinned environment used to produce the paper results:
 pip install -r requirements.txt
 ```
+
+All Python modules live in the importable `groke/` package and are run with
+`python -m groke.<module>` (see commands below). `pip install -e .` makes those
+imports resolve from any working directory; run the commands from the repo root
+so the relative data paths (`data/`, `predictions/`, `annotations/`, …) resolve.
 
 **Key Dependencies:**
 - `google-adk` - Google Agent Development Kit for multi-agent orchestration
@@ -30,7 +38,41 @@ pip install -r requirements.txt
 - `matplotlib`, `numpy`, `scipy` - Visualization and analysis
 - `networkx` - Graph operations
 
-### 2.1. Instruction Generation (`first_agent.py`)
+### 2.0.1. Project Structure
+
+```
+groke/                  # importable package (pip install -e .)
+├── prompts.py          # LLM prompt strings
+├── templates.py        # batch-request builders
+├── data_loader.py      # dataset access (get_data_by_instruction)
+├── visualize.py        # matplotlib area visualization
+├── data_manager.py     # orchestrates per-step data prep
+├── step_generator.py   # builds per-step navigation prompts
+├── process_results.py  # parses agent outputs into next-step state
+├── scorer/             # graph context, grid representation, POI extraction, agents
+├── agents/             # pipeline entry points (run as scripts)
+│   ├── first_agent.py      # instruction divider
+│   ├── second_agent.py     # navigator
+│   ├── multi_format_agent.py
+│   └── runner.py           # single-instruction ADK runner (was main.py)
+└── evaluation/
+    ├── metrics.py          # navigation metrics (was evaluation_metrics.py)
+    ├── baseline.py         # baseline evaluator
+    └── usage_metadata.py   # token/cost analysis
+
+analysis/               # standalone analysis & plotting scripts
+scripts/                # operational utilities (download_dataset.sh, batch.py, merge.py)
+data/                   # map2seq dataset (OSM graph + splits)
+generated_prompts/      # generated step{N}_{method}.jsonl prompts
+predictions/            # model prediction outputs
+annotations/            # human/auto annotation files (correctness, POI, errors)
+paper_results/          # step-by-step results behind the paper
+evaluation_results/     # computed metrics + plots
+assets/                 # figures used in this README
+scratch/                # throwaway / exploratory scripts (not part of the pipeline)
+```
+
+### 2.1. Instruction Generation (`groke/agents/first_agent.py`)
 
 The first agent parses navigation instructions from raw text and generates sub-goals and landmarks.
 
@@ -39,20 +81,20 @@ The first agent parses navigation instructions from raw text and generates sub-g
 
 ```bash
 # Process navigation instructions
-python first_agent.py
+python -m groke.agents.first_agent
 ```
 
 This reads from `main_results/main_test_seen.jsonl` and outputs parsed navigation data with:
 - `sub_goals`: List of sequential navigation sub-instructions
 - `landmarks`: Identified POIs mentioned in the instructions
 
-### 2.2. Step Generator (`step_generator.py`)
+### 2.2. Step Generator (`groke/step_generator.py`)
 
 Generates navigation prompts for each step based on the current agent state. Supports multiple representation formats for ablation studies.
 
 **Usage:**
 ```bash
-python step_generator.py --input main_test_seen.json --output-dir main_prompt_seen --step <STEP_NUMBER>
+python -m groke.step_generator --input main_test_seen.json --output-dir main_prompt_seen --step <STEP_NUMBER>
 ```
 
 **Arguments:**
@@ -68,7 +110,7 @@ python step_generator.py --input main_test_seen.json --output-dir main_prompt_se
 
 **Example - Generate step 2 prompts for JSON representation:**
 ```bash
-python step_generator.py -i main_test_seen.json -o main_prompt_seen -s 2 -m json
+python -m groke.step_generator -i main_test_seen.json -o main_prompt_seen -s 2 -m json
 ```
 
 **Output:** JSONL files per method: `step{N}_{method}.jsonl`
@@ -81,13 +123,13 @@ python step_generator.py -i main_test_seen.json -o main_prompt_seen -s 2 -m json
 
 ### 2.3. Evaluation
 
-#### 2.3.1. Running Evaluation (`evaluation_metrics.py`)
+#### 2.3.1. Running Evaluation (`groke/evaluation/metrics.py`)
 
 Computes navigation metrics comparing predicted paths against ground truth OSM paths.
 
 **Usage:**
 ```bash
-python evaluation_metrics.py --input <predictions.json> --output <output_dir> --split-file <split.json>
+python -m groke.evaluation.metrics --input <predictions.json> --output <output_dir> --split-file <split.json>
 ```
 
 **Arguments:**
@@ -102,11 +144,11 @@ python evaluation_metrics.py --input <predictions.json> --output <output_dir> --
 
 **Example - Evaluate on test_seen split:**
 ```bash
-python evaluation_metrics.py \
+python -m groke.evaluation.metrics \
     --input paper_results/main_test_seen.json \
     --output evaluation_results/seen \
     --split-file test_seen.json \
-    --difficulty-file correctness_hardness.json
+    --difficulty-file annotations/correctness_hardness.json
 ```
 
 **Output Files:**
@@ -140,13 +182,13 @@ The evaluation computes standard VLN (Vision-and-Language Navigation) metrics:
 - F1 Score: Harmonic mean of precision and recall
 - Sequence Overlap: Longest common subsequence ratio
 
-#### 2.3.3. Computational Cost Analysis (`usage_metadata_anal.py`)
+#### 2.3.3. Computational Cost Analysis (`groke/evaluation/usage_metadata.py`)
 
 Analyzes token usage and computational costs from inference results.
 
 **Usage:**
 ```bash
-python usage_metadata_anal.py <folder_path> [options]
+python -m groke.evaluation.usage_metadata <folder_path> [options]
 ```
 
 **Arguments:**
@@ -161,16 +203,16 @@ python usage_metadata_anal.py <folder_path> [options]
 **Examples:**
 ```bash
 # Analyze single experiment
-python usage_metadata_anal.py paper_results/main_results_seen
+python -m groke.evaluation.usage_metadata paper_results/main_results_seen
 
 # Compare multiple experiments
-python usage_metadata_anal.py paper_results/ablation_study_json \
+python -m groke.evaluation.usage_metadata paper_results/ablation_study_json \
     paper_results/ablation_study_low \
     paper_results/ablation_study_high \
     --compare
 
 # Export to JSON
-python usage_metadata_anal.py paper_results/main_results_seen -o token_analysis.json
+python -m groke.evaluation.usage_metadata paper_results/main_results_seen -o token_analysis.json
 ```
 
 **Output Statistics:**
@@ -203,31 +245,31 @@ Total Tokens (per instruction):
 
 **Step 1: Generate sub-instructions from raw navigation text**
 ```bash
-python first_agent.py
+python -m groke.agents.first_agent
 ```
 
 **Step 2: Generate navigation prompts for each step**
 ```bash
 # For test_seen split
 # For step in 1 2 3 4 5 6 7 8 9 10; do
-python data_manager.py 
-python step_generator.py -i main_test_seen.json -o main_prompt_seen -s $step
+python -m groke.data_manager 
+python -m groke.step_generator -i main_test_seen.json -o main_prompt_seen -s $step
 #
 ```
 
 **Step 3: Run the navigation agent (single instruction)**
 ```bash
-python main.py
+python -m groke.agents.runner
 ```
 
 **Step 4: Process results and generate next steps**
 ```bash
-python process_results.py
+python -m groke.process_results
 ```
 
 **Step 5: Evaluate predictions**
 ```bash
-python evaluation_metrics.py \
+python -m groke.evaluation.metrics \
     --input paper_results/main_test_seen.json \
     --output evaluation_results \
     --split-file test_seen.json
@@ -235,7 +277,7 @@ python evaluation_metrics.py \
 
 **Step 6: Analyze computational costs**
 ```bash
-python usage_metadata_anal.py paper_results/main_results_seen -v
+python -m groke.evaluation.usage_metadata paper_results/main_results_seen -v
 ```
 
 ### 2.5. Data Structure
@@ -244,13 +286,18 @@ python usage_metadata_anal.py paper_results/main_results_seen -v
 data/
 └── map2seq/
     ├── osm/                    # OpenStreetMap area data
-    │   └── <area_id>/
-    │       ├── nodes.json      # OSM nodes with coordinates
-    │       ├── links.json      # OSM way connections
-    │       └── pois.json       # Points of interest
+    │   ├── graph/
+    │   │   ├── nodes.txt       # OSM nodes with coordinates
+    │   │   ├── links.txt       # OSM way connections
+    │   │   ├── pois.txt        # Points of interest
+    │   │   └── poi_links.txt   # POI-to-node associations
+    │   ├── command.txt
+    │   └── map2seq_new_york-171204.osm
     ├── splits/
     │   ├── test_seen.json      # Test split (seen areas)
-    │   └── test_unseen.json    # Test split (unseen areas)
+    │   ├── test_unseen.json    # Test split (unseen areas)
+    │   ├── train.json / val.json
+    │   └── *_200.json          # 200-item evaluation subsets
     └── readme.txt
 
 paper_results/
@@ -261,6 +308,15 @@ paper_results/
 │   └── ...
 └── ablation_study_*/           # Ablation experiments
 ```
+
+> **Known limitations.** Some pipeline scripts still carry data-path literals
+> from an earlier directory layout that no longer exists in this snapshot —
+> e.g. `groke/agents/first_agent.py` reads `main_results/main_test_seen.jsonl`,
+> and several scripts reference an `ablation_study/` directory. The experiment
+> data now lives under `paper_results/` (e.g. `paper_results/main_test_seen.json`,
+> `paper_results/ablation_study_*/`). Point these scripts at the corresponding
+> `paper_results/` paths before running them. Module imports, by contrast, are
+> fully wired through the `groke` package and work after `pip install -e .`.
 
 
 

@@ -19,7 +19,7 @@ import re
 from collections import Counter, defaultdict, deque
 from typing import Dict, List, Optional, Tuple, Any
 
-from src.data_loader import get_data_by_instruction
+from groke.data_loader import get_data_by_instruction
 
 
 # =============================================================================

@@ -6,8 +6,8 @@ from google.genai import types
 from langfuse import Langfuse
 from openinference.instrumentation.google_adk import GoogleADKInstrumentor
 
-from scorer.agent import root_agent
-from src.data_loader import get_data_by_instruction
+from groke.scorer.agent import root_agent
+from groke.data_loader import get_data_by_instruction
 
 # Langfuse Configuration
 # langfuse = Langfuse(

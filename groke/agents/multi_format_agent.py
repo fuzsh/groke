@@ -17,9 +17,9 @@ from typing import Dict, List, Optional, Tuple, Any
 
 from rapidfuzz import fuzz
 
-from scorer.graph_context import navigate
-from scorer.grid_repsentation import convert2grid
-from scorer.presentation_formats import (
+from groke.scorer.graph_context import navigate
+from groke.scorer.grid_representation import convert2grid
+from groke.scorer.presentation_formats import (
     generate_textual_representation,
     generate_json_representation,
     generate_json_representation_dict,
@@ -29,8 +29,8 @@ from scorer.presentation_formats import (
     RepresentationFormat,
     generate_batch_request
 )
-from src.data_loader import get_data_by_instruction
-from templates import navigator_batch, navigator_batch_multi_format, multi_step_batch
+from groke.data_loader import get_data_by_instruction
+from groke.templates import navigator_batch, navigator_batch_multi_format, multi_step_batch
 
 
 OUTPUT_FILE = 'multi_format_navigator.jsonl'
@@ -264,7 +264,7 @@ class MultiFormatNavigationProcessor:
 
     def __init__(
         self,
-        instructions_file: str = 'predications/test_seen_processed.jsonl',
+        instructions_file: str = 'predictions/test_seen_processed.jsonl',
         output_file: str = 'multi_format_navigator.jsonl',
         split_file: str = "test_seen.json",
         base_path: str = './data/map2seq/',

@@ -2,12 +2,12 @@ import json
 import math
 from collections import deque
 
-from scorer.graph_context import navigate
-from scorer.grid_repsentation import convert2grid
-from src.data_loader import get_data_by_instruction
+from groke.scorer.graph_context import navigate
+from groke.scorer.grid_representation import convert2grid
+from groke.data_loader import get_data_by_instruction
 from rapidfuzz import fuzz
 
-from src.visualize import visualize_area
+from groke.visualize import visualize_area
 
 instruction_id = 4742
 split_file = "paper_results/test_seen.json"

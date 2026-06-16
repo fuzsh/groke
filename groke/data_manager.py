@@ -6,8 +6,8 @@ from typing import Dict
 
 import json_repair
 
-from process_results import resolve_grid_next_place
-from src.data_loader import get_data_by_instruction
+from groke.process_results import resolve_grid_next_place
+from groke.data_loader import get_data_by_instruction
 
 
 def load_navigation_instructions(file_path: str) -> Dict[str, Dict]:

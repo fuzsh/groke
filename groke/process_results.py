@@ -17,17 +17,17 @@ from collections import defaultdict, deque
 import json_repair
 from rapidfuzz import fuzz
 
-from prompts import (
+from groke.prompts import (
     GRID_NAVIGATOR_PROMPT,
     TEXTUAL_NAVIGATOR_PROMPT,
     JSON_NAVIGATOR_PROMPT,
     GRAPH_VIS_NAVIGATOR_PROMPT
 )
-from scorer.graph_context import navigate, calculate_heading_from_coords
-from scorer.grid_repsentation import convert2grid, get_node_id_from_position
-from scorer.presentation_formats import generate_all_representations
-from src.data_loader import get_data_by_instruction
-from templates import navigator_batch
+from groke.scorer.graph_context import navigate, calculate_heading_from_coords
+from groke.scorer.grid_representation import convert2grid, get_node_id_from_position
+from groke.scorer.presentation_formats import generate_all_representations
+from groke.data_loader import get_data_by_instruction
+from groke.templates import navigator_batch
 
 
 def load_navigation_instructions(file_path: str) -> Dict[str, Dict]:

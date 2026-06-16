@@ -1217,8 +1217,8 @@ class NavigationStepGenerator:
             - 'all_representations': All formats (if include_all_formats=True)
             - 'metadata': Step metadata
         """
-        from scorer.graph_context import navigate
-        from scorer.grid_repsentation import convert2grid
+        from .graph_context import navigate
+        from .grid_representation import convert2grid
 
         # Get path data for current position
         path_data = navigate(
@@ -1332,7 +1332,7 @@ class NavigationStepGenerator:
 
         # Add previous position to visited list
         # Find the path data for the previous node
-        from scorer.graph_context import navigate
+        from .graph_context import navigate
 
         prev_path_data = navigate(
             map_json=self.area_data,

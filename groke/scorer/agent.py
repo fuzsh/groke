@@ -7,9 +7,9 @@ from google.adk.models import LlmRequest, LlmResponse
 from google.adk.models.lite_llm import LiteLlm
 from google.genai import types
 
-from prompts import INSTRUCTION_DIVIDER_PROMPT, NODE_NAVIGATOR_PROMPT, CODE_GENERATION_PROMPT
-from scorer.orchestrator import NavigationOrchestrator
-from scorer.schema import InstructionDivision, NavigationStepOutput
+from groke.prompts import INSTRUCTION_DIVIDER_PROMPT, NODE_NAVIGATOR_PROMPT, CODE_GENERATION_PROMPT
+from .orchestrator import NavigationOrchestrator
+from .schema import InstructionDivision, NavigationStepOutput
 
 # litellm.api_key = "G4aNJjsWhnxYOmJRmZ9iB61zokKJ2eMVqsqncytZoXfETlYJQITGJQQJ99BIACfhMk5XJ3w3AAAAACOG5yaV"
 # litellm.api_base = "https://feri.cognitiveservices.azure.com/"

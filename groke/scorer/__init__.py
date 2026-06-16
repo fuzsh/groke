@@ -10,7 +10,7 @@ This package provides:
 """
 
 # Presentation formats (no external dependencies beyond dataclasses/json)
-from scorer.presentation_formats import (
+from .presentation_formats import (
     generate_textual_representation,
     generate_json_representation,
     generate_json_representation_dict,
@@ -25,9 +25,9 @@ from scorer.presentation_formats import (
     PresentationContext
 )
 
-# Try to import grid_repsentation (requires numpy)
+# Try to import grid_representation (requires numpy)
 try:
-    from scorer.grid_repsentation import (
+    from .grid_representation import (
         convert2grid,
         setup_grid_dynamically,
         find_poi_grid_positions,
@@ -49,7 +49,7 @@ except ImportError:
 
 # Try to import graph_context (requires toon_format)
 try:
-    from scorer.graph_context import (
+    from .graph_context import (
         navigate,
         build_navigation_context,
         encode_navigation_context,

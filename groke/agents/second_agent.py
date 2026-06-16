@@ -5,15 +5,15 @@ from typing import Dict, Optional, Tuple
 
 from rapidfuzz import fuzz
 
-from scorer.graph_context import navigate
-from scorer.grid_repsentation import convert2grid
-from src.data_loader import get_data_by_instruction
-from templates import navigator_batch
+from groke.scorer.graph_context import navigate
+from groke.scorer.grid_representation import convert2grid
+from groke.data_loader import get_data_by_instruction
+from groke.templates import navigator_batch
 
 OUTPUT_FILE = 'navigator_agent.jsonl'
 
 navigation_instructions = []
-with open(f'predications/test_seen_processed.jsonl', 'r') as f:
+with open(f'predictions/test_seen_processed.jsonl', 'r') as f:
     for l in f.readlines():
         navigation_instructions.append(json.loads(l))
 

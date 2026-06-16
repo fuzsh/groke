@@ -3,8 +3,8 @@ import random
 
 import json_repair
 
-from src.data_loader import get_data_by_instruction
-from templates import navigation_divider_batch
+from groke.data_loader import get_data_by_instruction
+from groke.templates import navigation_divider_batch
 
 # NUM_ITEMS = 1000
 # SPLIT_FILE = "test_unseen.json"
