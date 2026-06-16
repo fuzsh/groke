@@ -1,4 +1,15 @@
-# GROKE: Vision-Free Navigation Instruction Evaluation via Graph Reasoning on OpenStreetMap
+<div align="center">
+    
+  # GROKE: Vision-Free Navigation Instruction Evaluation via Graph Reasoning on OpenStreetMap
+
+  🎉 **Accepted to ACL 2026 Main Conference — San Diego, USA 🇺🇸**
+
+  [![arXiv](https://img.shields.io/badge/arXiv-2601.07375-b31b1b.svg)](https://arxiv.org/abs/2601.07375)
+  [![ACL 2026](https://img.shields.io/badge/ACL-2026%20Main-blue)](https://2026.aclweb.org/)
+  [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+  [📄 Paper](https://arxiv.org/abs/2601.07375) • [💻 Code](https://github.com/fuzsh/groke) • [🗂️ Map2Seq Dataset](https://map2seq.schumann.pub/dataset/) • [🌐 Project Page](https://fuzsh.github.io/groke/)
+</div>
 
 ---
 
